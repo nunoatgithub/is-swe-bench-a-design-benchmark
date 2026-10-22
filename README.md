@@ -242,3 +242,10 @@ score), `issue_pr_agree_sonnet`, `agree_all_four`.
 The SWE-bench issue text and the GitHub PR text are not redistributed here; they are fetched
 by the scripts. The files in `raw/` and `results/` contain only scores, confidences and
 one-sentence reasons written by the raters.
+
+## License
+
+Released into the public domain under [the Unlicense](LICENSE). This covers the code, the
+rubrics and prompts, the ratings in `raw/` and the tables in `results/`. It does not cover the
+SWE-bench dataset or the GitHub issue and PR text, which belong to their owners and are not
+included here.
