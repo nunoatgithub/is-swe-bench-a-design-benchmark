@@ -1,10 +1,10 @@
 # How much engineering does SWE-bench Verified ask for?
 
-SWE-bench Verified is the standard benchmark for coding agents: 500 real GitHub issues, each
+SWE-bench Verified is a standard benchmark for coding agents: 500 real GitHub issues, each
 paired with the pull request that fixed it. This project investigates **how much effort each fix
 requires**, to see what kind of work the benchmark actually measures and how much actual design effort it entails.
 
-Every task gets a score from 0 to 3, rated by language models from the issue text and,
+Every task gets a score from 0 to 3, classified by language models from the issue text and,
 independently, from the title and body of the PR that fixed it.
 
 ## Headline result
@@ -25,7 +25,7 @@ evidence that the benchmark contains a meaningful share of real design challenge
 
 Number of tasks per score (out of 500; percentages are of 500):
 
-| Score | Rated from the issue: Haiku | Rated from the issue: Sonnet | Rated from the PR: Haiku | Rated from the PR: Sonnet |
+| Score | Classified from the issue: Haiku | Classified from the issue: Sonnet | Classified from the PR: Haiku | Classified from the PR: Sonnet |
 |---|---|---|---|---|
 | **0** | 125 (25%) | 104 (21%) | 99 (20%) | 82 (16%) |
 | **1** | 223 (45%) | 220 (44%) | 272 (54%) | 261 (52%) |
@@ -34,19 +34,19 @@ Number of tasks per score (out of 500; percentages are of 500):
 | Too thin to score | – | – | 13 | 9 |
 
 All four columns tell the same story: 1 is the most common score, and 3 is rare. By Sonnet's
-ratings, 65% of tasks are 0 or 1 when rated from the issue, and 70% of the scorable tasks are
-0 or 1 when rated from the PR. Even the 2s (about 30%) are not design in the architectural
+classifications, 65% of tasks are 0 or 1 when classified from the issue, and 70% of the scorable tasks are
+0 or 1 when classified from the PR. Even the 2s (about 30%) are not design in the architectural
 sense, so the share of design-heavy tasks is bounded by the 3s: roughly 2-4%, before any
 validation.
 
 ### The level 3 tasks (the design-like ones)
 
 Level 3 is the one that matches design work, so it is the number to watch. No more than
-about 4% of tasks reach it in any single rating (Haiku 2%, Sonnet 4%, Jev under 1%). Counting
-how many of the four Claude ratings (Haiku and Sonnet, from the issue and from the PR) give
+about 4% of tasks reach it in any single classification (Haiku 2%, Sonnet 4%, Jev under 1%). Counting
+how many of the four Claude classifications (Haiku and Sonnet, from the issue and from the PR) give
 a task a 3:
 
-| Claude ratings at 3 (of 4) | Tasks |
+| Claude classifications at 3 (of 4) | Tasks |
 |---|---|
 | 4 | 2 |
 | 3 | 8 |
@@ -54,9 +54,9 @@ a task a 3:
 | 1 | 14 |
 | **At least one** | **32 (6% of 500)** |
 
-Only 10 tasks have three or more of the four ratings at 3, and 2 have all four. These
+Only 10 tasks have three or more of the four classifications at 3, and 2 have all four. These
 are the tasks to read first if you want to examine the design-like cases; `analyze.py` lists
-them in `results/level3.csv`. The 14 tasks that Sonnet rates 3 from both
+them in `results/level3.csv`. The 14 tasks that Sonnet classifies as 3 from both
 the issue and the PR are spread over nine repositories, with Django the largest share (5).
 
 ### The high-confidence subset
@@ -71,7 +71,7 @@ Taking only the tasks where the issue-based and PR-based Sonnet scores agree giv
 | 2 | 89 | 28% |
 | 3 | 14 | 4% |
 
-A stricter set, where all four ratings (Haiku and Sonnet, from the issue and from the PR)
+A stricter set, where all four classifications (Haiku and Sonnet, from the issue and from the PR)
 agree, has **153 tasks**: 34 at 0, 86 at 1, 31 at 2 and 2 at 3. `analyze.py` writes the
 per-task scores and both subset flags to `results/scores.csv`.
 
@@ -88,21 +88,21 @@ to *find* in a large codebase, or how much reading and testing it takes. Also, S
 Verified was deliberately filtered to well-specified, tractable issues, so a skew toward small
 fixes is partly by design. See [Limitations](#limitations).
 
-## How much do the raters agree?
+## How much do the classifiers agree?
 
-Three raters scored the issue text: Claude Haiku, Claude Sonnet, and Jev (TypeSafe's scoring
-model). A task counts as agreeing when both raters give the same 0-3 score.
+Three classifiers scored the issue text: Claude Haiku, Claude Sonnet, and Jev (TypeSafe's scoring
+model). A task counts as agreeing when both classifiers give the same 0-3 score.
 
 | Pair (issue text) | Exactly equal | Within 1 point | Differ by 2+ |
 |---|---|---|---|
 | Haiku vs Sonnet | 68.8% | 99.2% | 4 of 500 |
 | Jev vs Haiku | 62.4% | 99.4% | 3 of 500 |
 | Jev vs Sonnet | 60.6% | 98.4% | 8 of 500 |
-| Haiku vs Sonnet, rated from the PR | 67.8% | 100% | 0 of 481 |
+| Haiku vs Sonnet, classified from the PR | 67.8% | 100% | 0 of 481 |
 
-The raters almost never contradict each other; they mostly disagree by one point at a boundary.
+The classifiers almost never contradict each other; they mostly disagree by one point at a boundary.
 
-- **Sonnet rates slightly higher than Haiku**, mainly at the top end: 22 tasks at 3 against 11.
+- **Sonnet scores slightly higher than Haiku**, mainly at the top end: 22 tasks at 3 against 11.
 - **Jev squeezes scores toward 1.** It gives 1 to 353 of 500 tasks (71%) and rarely gives a 2
   or a 3 (64 and 2). Its probabilities are informative at the top: on the 39 tasks where its
   confidence is 0.85 or higher, it matches Sonnet 97% of the time. Below 0.85 its confidence
@@ -147,16 +147,16 @@ The issue text is the dataset's `problem_statement`, which is what the benchmark
 The PR title and body are fetched from the GitHub API (`fetch_prs.py`); the PR number is the
 suffix of the `instance_id`. The agent never sees the PR text.
 
-**Rating.** Each rater scores every task on the 0-3 scale from one source only:
-- *Issue text*: [`rubrics/issue.md`](rubrics/issue.md). The rater judges the effort a correct
+**Classification.** Each classifier scores every task on the 0-3 scale from one source only:
+- *Issue text*: [`rubrics/issue.md`](rubrics/issue.md). The classifier judges the effort a correct
   fix would need.
-- *PR title and body*: [`rubrics/pr.md`](rubrics/pr.md). Same scale, rated from the author's
+- *PR title and body*: [`rubrics/pr.md`](rubrics/pr.md). Same scale, classified from the author's
   description, with an `insufficient_info` option instead of a guess.
 
 Claude Haiku and Claude Sonnet ran as Claude Code subagents (model aliases `haiku` and `sonnet`,
-default settings), each rating a chunk of tasks in parallel (25 per agent for Haiku, 50 for
+default settings), each classifying a chunk of tasks in parallel (25 per agent for Haiku, 50 for
 Sonnet) and seeing nothing but the rubric and its chunk. The exact prompt is in
-[`prompts/subagent.md`](prompts/subagent.md). Each rater returns a score, a confidence and a
+[`prompts/subagent.md`](prompts/subagent.md). Each classifier returns a score, a confidence and a
 one-sentence reason; the per-task outputs go to `raw/`.
 
 Jev was queried through its HTTP API with a Score question whose four levels are the same
@@ -170,15 +170,15 @@ and the yes/no was too coarse. Only the 0-3 scale is reported here.
 
 ## Limitations
 
-- **No human validation.** All scores are model judgments. The raters agree with each other,
+- **No human validation.** All scores are model judgments. The classifiers agree with each other,
   which shows consistency, not correctness; they could share the same blind spots.
-- **Effort is judged from text, not code.** The raters never see the repository or the patch.
+- **Effort is judged from text, not code.** The classifiers never see the repository or the patch.
   Both models sometimes invent complexity or miss it. In a manual look at the four tasks where
   Haiku and Sonnet differed most, the issue described a small, clearly specified change in all
-  four, and each model had over-rated one of them with a speculative reason.
-- **The scale rates the fix, not the search.** Locating the right place in a large codebase,
+  four, and each model had over-scored one of them with a speculative reason.
+- **The scale scores the fix, not the search.** Locating the right place in a large codebase,
   reading the surrounding code and checking the behavior are not scored.
-- **Design appears only at level 3.** The scale rates the effort of the fix. Level 2 mixes
+- **Design appears only at level 3.** The scale scores the effort of the fix. Level 2 mixes
   interface and correctness decisions with a little real design, and the scale does not
   separately measure architecture or resource management. Conclusions about design should rest
   on the level 3 tasks alone, and those were not validated by a person.
@@ -203,10 +203,10 @@ python prepare_chunks.py --source issues --size 50   # Sonnet
 python prepare_chunks.py --source prs --size 25
 python prepare_chunks.py --source prs --size 50
 
-# 3. Rate with Claude Code subagents: one agent per chunk, using prompts/subagent.md
+# 3. Classify with Claude Code subagents: one agent per chunk, using prompts/subagent.md
 #    (outputs go to raw/issue_{haiku,sonnet}/ and raw/pr_{haiku,sonnet}/)
 
-# 4. Rate the issues with Jev (needs a TypeSafe API key)
+# 4. Classify the issues with Jev (needs a TypeSafe API key)
 export TYPESAFE_API_KEY=...
 python run_jev.py --model jev-1.14.0
 
@@ -216,9 +216,9 @@ python analyze.py
 python -m unittest discover -s tests -t .
 ```
 
-Step 3 was done interactively in Claude Code; it is not a script. The ratings behind this
+Step 3 was done interactively in Claude Code; it is not a script. The classifications behind this
 README are committed in `raw/` and the tables built from them in `results/`, so steps 1-4 can be
-skipped and `analyze.py` run directly. A fresh rerun of the rating steps may differ slightly,
+skipped and `analyze.py` run directly. A fresh rerun of the classification steps may differ slightly,
 since model outputs vary.
 
 ## Repository layout
@@ -226,10 +226,10 @@ since model outputs vary.
 | Path | Contents |
 |---|---|
 | `results/scores.csv` | One row per task: all scores, Jev confidence, and the two agreement flags |
-| `results/level3.csv` | The 32 tasks at least one Claude rating scores 3, ranked by how many agree |
+| `results/level3.csv` | The 32 tasks at least one Claude classification scores 3, ranked by how many agree |
 | `results/stats.json` | Every number quoted in this README |
-| `raw/` | Per-task outputs of each rater, including the reason text |
-| `rubrics/` | The two rating rubrics |
+| `raw/` | Per-task outputs of each classifier, including the reason text |
+| `rubrics/` | The two classification rubrics |
 | `prompts/subagent.md` | The prompt given to each subagent |
 | `engeff/` | Shared code: the scale, data loading, the Jev client |
 | `fetch_prs.py`, `prepare_chunks.py`, `run_jev.py`, `analyze.py` | The pipeline |
@@ -241,11 +241,11 @@ score), `issue_pr_agree_sonnet`, `agree_all_four`.
 
 The SWE-bench issue text and the GitHub PR text are not redistributed here; they are fetched
 by the scripts. The files in `raw/` and `results/` contain only scores, confidences and
-one-sentence reasons written by the raters.
+one-sentence reasons written by the classifiers.
 
 ## License
 
 Released into the public domain under [the Unlicense](LICENSE). This covers the code, the
-rubrics and prompts, the ratings in `raw/` and the tables in `results/`. It does not cover the
+rubrics and prompts, the classifications in `raw/` and the tables in `results/`. It does not cover the
 SWE-bench dataset or the GitHub issue and PR text, which belong to their owners and are not
 included here.
