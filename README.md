@@ -1,4 +1,4 @@
-# How much engineering does SWE-bench Verified ask for?
+# How much design does SWE-bench Verified ask for?
 
 SWE-bench Verified is a standard benchmark for coding agents: 500 real GitHub issues, each
 paired with the pull request that fixed it. This project investigates **how much effort each fix
