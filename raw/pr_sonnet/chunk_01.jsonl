@@ -1,0 +1,50 @@
+{"instance_id": "django__django-11477", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Fix in RegexPattern.match to drop None groups needed digging across resolver and reverse behavior, with compatibility considerations."}
+{"instance_id": "django__django-11490", "score": 1, "insufficient_info": false, "confidence": 0.5, "reason": "Title describes preventing mutation of column lists in combined queries, likely a small localized copy fix."}
+{"instance_id": "django__django-11532", "score": 1, "insufficient_info": false, "confidence": 0.65, "reason": "Convert non-ASCII DNS name to punycode in one class; small localized change."}
+{"instance_id": "django__django-11551", "score": 1, "insufficient_info": false, "confidence": 0.5, "reason": "Adjust list_display check logic for instance-only fields; small change in one function."}
+{"instance_id": "django__django-11555", "score": 2, "insufficient_info": false, "confidence": 0.4, "reason": "Ordering by ptr fields with expressions in Meta.ordering needs handling of several cases and had review iterations."}
+{"instance_id": "django__django-11603", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Enable distinct flag on Avg and Sum, a small class attribute change plus tests and docs."}
+{"instance_id": "django__django-11728", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Regex-group parsing in two functions needed care for trailing groups; author struggled with one of them."}
+{"instance_id": "django__django-11734", "score": 3, "insufficient_info": false, "confidence": 0.3, "reason": "Exclusion of multi-valued lookups against outer references touches query internals and subtle semantics, though body gives no details."}
+{"instance_id": "django__django-11740", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Autodetector must add dependencies when altering FKs to other apps, requiring consistent handling."}
+{"instance_id": "django__django-11749", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Handling required mutually exclusive groups in call_command needs choices about argument passing and edge cases."}
+{"instance_id": "django__django-11790", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Restore max_length on username widget attrs; small localized regression fix."}
+{"instance_id": "django__django-11815", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Change enum serializer to use member names; small localized change."}
+{"instance_id": "django__django-11820", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Fix ordering validation for pk of related fields; small check adjustment."}
+{"instance_id": "django__django-11848", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Implement RFC7231 two-digit year rollover logic with edge cases and mocked tests."}
+{"instance_id": "django__django-11880", "score": 0, "insufficient_info": false, "confidence": 0.6, "reason": "Add error_messages copy to Field.__deepcopy__, a one-line fix."}
+{"instance_id": "django__django-11885", "score": 3, "insufficient_info": false, "confidence": 0.6, "reason": "Combining fast-delete queries by model in the deletion collector is a design change to deletion logic."}
+{"instance_id": "django__django-11951", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Make bulk_create batch_size respect the backend max batch size, a few lines in one place."}
+{"instance_id": "django__django-11964", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Add __str__ to choices enum base class; small change with clear behavior."}
+{"instance_id": "django__django-11999", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Restore overridable get_FIELD_display by adjusting how the method is set; small localized change."}
+{"instance_id": "django__django-12039", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Fix whitespace in generated index column SQL; small localized formatting change."}
+{"instance_id": "django__django-12050", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Preserve the input list type in resolve_lookup_value; few lines in one place."}
+{"instance_id": "django__django-12125", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Use __qualname__ in class serialization for nested classes; small change."}
+{"instance_id": "django__django-12143", "score": 0, "insufficient_info": false, "confidence": 0.7, "reason": "Escape the prefix with re.escape in a regex; one-line fix."}
+{"instance_id": "django__django-12155", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Fix docstring indentation trimming when no leading newline; small localized change."}
+{"instance_id": "django__django-12193", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Copy attrs rather than mutate, with a choice of where; small change."}
+{"instance_id": "django__django-12209", "score": 2, "insufficient_info": false, "confidence": 0.4, "reason": "Disabling insert optimization for pk defaults when loading fixtures requires reasoning about save semantics and raw mode."}
+{"instance_id": "django__django-12262", "score": 1, "insufficient_info": false, "confidence": 0.5, "reason": "Fix keyword-only arg parsing in template tag parsing; small localized change."}
+{"instance_id": "django__django-12273", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Setting pk=None must propagate to parent pointers and autofields across inheritance hierarchy."}
+{"instance_id": "django__django-12276", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Add use_required_attribute method to FileInput; small localized change."}
+{"instance_id": "django__django-12304", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Set do_not_call_in_templates on enum classes; small change."}
+{"instance_id": "django__django-12308", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Special-case JSONField display in admin readonly display; small localized change."}
+{"instance_id": "django__django-12325", "score": 3, "insufficient_info": false, "confidence": 0.6, "reason": "Changes semantics of parent link detection with multiple OneToOneFields and interacts with system checks."}
+{"instance_id": "django__django-12406", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Avoid empty choice for RadioSelect with blank=False needs changes across model field and form field and widget behavior."}
+{"instance_id": "django__django-12419", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Change a default setting value."}
+{"instance_id": "django__django-12663", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Unwrap SimpleLazyObject when preparing lookup value; small localized fix."}
+{"instance_id": "django__django-12708", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Add a unique=False filter when finding constraints to delete; small change."}
+{"instance_id": "django__django-12713", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Respect formfield_overrides widget in M2M formfield handling; small change."}
+{"instance_id": "django__django-12741", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Removing an argument from a backend API requires consistent updates across callers and backends plus deprecation handling."}
+{"instance_id": "django__django-12754", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Autodetector operation ordering/dependencies for MTI field moves needs careful handling."}
+{"instance_id": "django__django-12774", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Extend unique field detection in in_bulk to consider UniqueConstraints; small change."}
+{"instance_id": "django__django-12858", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Adjust ordering validation to allow non-transform lookups; small check change."}
+{"instance_id": "django__django-12965", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Avoid subquery in delete for all() requires compiler change while keeping existing behavior for other cases."}
+{"instance_id": "django__django-13012", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Delegate get_group_by_cols to wrapped expression; small localized change."}
+{"instance_id": "django__django-13023", "score": 0, "insufficient_info": false, "confidence": 0.7, "reason": "Catch TypeError alongside existing exceptions in to_python."}
+{"instance_id": "django__django-13028", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Only check filterable attribute when rhs is an expression; small condition change."}
+{"instance_id": "django__django-13033", "score": 2, "insufficient_info": false, "confidence": 0.4, "reason": "Ordering by attname of self-referential FK involves query ordering resolution with edge cases."}
+{"instance_id": "django__django-13089", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Guard against no row returned in cull; small edge case fix."}
+{"instance_id": "django__django-13109", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Switch validate to use the base manager; small change."}
+{"instance_id": "django__django-13112", "score": 1, "insufficient_info": false, "confidence": 0.5, "reason": "Fix case handling of app label in FK deconstruction; small localized change."}
+{"instance_id": "django__django-13121", "score": 2, "insufficient_info": false, "confidence": 0.4, "reason": "Duration-only expression handling on SQLite and MySQL requires backend-specific changes that must stay consistent."}

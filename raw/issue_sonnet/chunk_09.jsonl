@@ -1,0 +1,50 @@
+{"instance_id": "sympy__sympy-15599", "score": 1, "confidence": 0.8, "reason": "A diff is given; small change in Mod.eval distributive logic."}
+{"instance_id": "sympy__sympy-15809", "score": 0, "confidence": 0.85, "reason": "Return oo/-oo instead of raising for empty args, a trivial change."}
+{"instance_id": "sympy__sympy-15875", "score": 2, "confidence": 0.6, "reason": "Add._eval_is_zero must be made correct for complex terms without returning wrong False, requiring care."}
+{"instance_id": "sympy__sympy-15976", "score": 2, "confidence": 0.55, "reason": "MathML presentation printer must handle symbols with trailing digits, requiring name splitting/mi handling in a few places."}
+{"instance_id": "sympy__sympy-16450", "score": 1, "confidence": 0.75, "reason": "Posify should copy assumptions like finite into the new Dummy; small change."}
+{"instance_id": "sympy__sympy-16597", "score": 2, "confidence": 0.6, "reason": "Adding implication rules in assumptions (even implies finite) must stay consistent with the rule system and may affect other facts."}
+{"instance_id": "sympy__sympy-16766", "score": 0, "confidence": 0.95, "reason": "Add the given _print_Indexed method to the printer."}
+{"instance_id": "sympy__sympy-16792", "score": 1, "confidence": 0.7, "reason": "Codegen must determine argument dimensions from the declared args rather than the expression, localized fix."}
+{"instance_id": "sympy__sympy-16886", "score": 0, "confidence": 0.98, "reason": "Fix a typo in the Morse mapping."}
+{"instance_id": "sympy__sympy-17139", "score": 0, "confidence": 0.8, "reason": "Guard the exponent comparison in TR6 for non-real exponents."}
+{"instance_id": "sympy__sympy-17318", "score": 1, "confidence": 0.75, "reason": "Handle the empty surds case so the expression is returned unchanged; small guard."}
+{"instance_id": "sympy__sympy-17630", "score": 2, "confidence": 0.65, "reason": "Block multiplication must preserve ZeroMatrix types, requiring a conversion in _blockmul and consistency with block structure."}
+{"instance_id": "sympy__sympy-17655", "score": 1, "confidence": 0.7, "reason": "Add __rmul__ to Point to delegate to __mul__; small localized change."}
+{"instance_id": "sympy__sympy-18189", "score": 1, "confidence": 0.7, "reason": "Permute handling must be applied after symbol reordering; small localized fix in diophantine."}
+{"instance_id": "sympy__sympy-18199", "score": 1, "confidence": 0.8, "reason": "Add the zero root when a % p == 0 in nthroot_mod."}
+{"instance_id": "sympy__sympy-18211", "score": 2, "confidence": 0.6, "reason": "Catch NotImplementedError in the as_set path and return a ConditionSet, choosing where to do so."}
+{"instance_id": "sympy__sympy-18698", "score": 2, "confidence": 0.6, "reason": "sqf_list must group factors of equal multiplicity, requiring changes to the algorithm and consistent output ordering."}
+{"instance_id": "sympy__sympy-18763", "score": 1, "confidence": 0.8, "reason": "Parenthesize the expression in the LaTeX Subs printer; small change."}
+{"instance_id": "sympy__sympy-19040", "score": 2, "confidence": 0.55, "reason": "The factoring over extension drops factors in the algebraic field path; requires understanding the polys code and choosing the correct fix."}
+{"instance_id": "sympy__sympy-19346", "score": 1, "confidence": 0.8, "reason": "Add _print_dict and _print_set to ReprPrinter, with sorting considerations."}
+{"instance_id": "sympy__sympy-19495", "score": 2, "confidence": 0.6, "reason": "ConditionSet._eval_subs must correctly treat the bound variable and avoid capturing, requiring careful handling."}
+{"instance_id": "sympy__sympy-19637", "score": 0, "confidence": 0.9, "reason": "Initialize kern before use in kernS."}
+{"instance_id": "sympy__sympy-19783", "score": 1, "confidence": 0.7, "reason": "Handle IdentityOperator multiplication with Dagger, in Dagger/IdentityOperator __mul__ methods."}
+{"instance_id": "sympy__sympy-19954", "score": 2, "confidence": 0.55, "reason": "minimal_blocks list deletion logic needs correct rework in algorithmic code."}
+{"instance_id": "sympy__sympy-20154", "score": 1, "confidence": 0.85, "reason": "Yield a copy of the dictionary in partitions and update docs."}
+{"instance_id": "sympy__sympy-20428", "score": 2, "confidence": 0.6, "reason": "Need to strip the DMP representation after clear_denoms and ensure consistency across polys code."}
+{"instance_id": "sympy__sympy-20438", "score": 2, "confidence": 0.6, "reason": "Needs is_subset handling for ProductSet and fixes for Complement/Eq simplification across set code."}
+{"instance_id": "sympy__sympy-20590", "score": 1, "confidence": 0.8, "reason": "Add the missing __slots__ to the parent class that lost it."}
+{"instance_id": "sympy__sympy-20801", "score": 1, "confidence": 0.7, "reason": "Make float comparison with Boolean false return False consistently, in Float.__eq__."}
+{"instance_id": "sympy__sympy-20916", "score": 1, "confidence": 0.7, "reason": "Fix regex for splitting subscripts on Greek letters in pretty printing."}
+{"instance_id": "sympy__sympy-21379", "score": 2, "confidence": 0.5, "reason": "Hard-to-diagnose problem in subs with Piecewise generators; fix requires choosing where to catch/avoid PolynomialError."}
+{"instance_id": "sympy__sympy-21596", "score": 2, "confidence": 0.6, "reason": "Intersection of ImageSet with Reals logic must be corrected, handling cases properly."}
+{"instance_id": "sympy__sympy-21612", "score": 2, "confidence": 0.6, "reason": "LaTeX fraction parsing must produce correct grouping of the denominator, changing the parser's construction of Mul/Pow."}
+{"instance_id": "sympy__sympy-21847", "score": 1, "confidence": 0.8, "reason": "Fix the degree filter condition from max of exponents to total degree in itermonomials."}
+{"instance_id": "sympy__sympy-21930", "score": 1, "confidence": 0.8, "reason": "Wrap the dagger operator in braces in the LaTeX printing of secondquant classes."}
+{"instance_id": "sympy__sympy-22080", "score": 2, "confidence": 0.55, "reason": "Printer for Mod must parenthesize correctly with python operator precedence, requiring thought about the printer."}
+{"instance_id": "sympy__sympy-22456", "score": 1, "confidence": 0.75, "reason": "Make String accept args so func(*args) reconstructs it; small but touches construction."}
+{"instance_id": "sympy__sympy-22714", "score": 2, "confidence": 0.55, "reason": "Point's imaginary-check under evaluate(False) must be fixed without breaking other behavior."}
+{"instance_id": "sympy__sympy-22914", "score": 0, "confidence": 0.95, "reason": "Add the given _print_Min and _print_Max methods."}
+{"instance_id": "sympy__sympy-23262", "score": 0, "confidence": 0.85, "reason": "Add a trailing comma for one-element tuples in the printer."}
+{"instance_id": "sympy__sympy-23413", "score": 2, "confidence": 0.55, "reason": "HNF rank detection logic must be fixed for such matrices, requires understanding the algorithm."}
+{"instance_id": "sympy__sympy-23534", "score": 1, "confidence": 0.8, "reason": "Pass cls through when recursing on nested sequences in symbols."}
+{"instance_id": "sympy__sympy-23824", "score": 0, "confidence": 0.9, "reason": "Reverse the loop order for inserting leading matrices."}
+{"instance_id": "sympy__sympy-23950", "score": 1, "confidence": 0.7, "reason": "Implement Contains.as_set to return the set of the given Contains or raise NotImplementedError."}
+{"instance_id": "sympy__sympy-24066", "score": 2, "confidence": 0.65, "reason": "Handle Function in _collect_factor_and_dimension by checking dimensionless arguments and returning dimension 1."}
+{"instance_id": "sympy__sympy-24213", "score": 1, "confidence": 0.75, "reason": "Use dimension system equivalence in the Add branch instead of equality."}
+{"instance_id": "sympy__sympy-24443", "score": 2, "confidence": 0.65, "reason": "Rework _image to handle inverted generators in PermutationGroup, needing correct handling of inverses."}
+{"instance_id": "sympy__sympy-24539", "score": 1, "confidence": 0.8, "reason": "Use the passed symbols in as_expr instead of ring symbols."}
+{"instance_id": "sympy__sympy-24562", "score": 1, "confidence": 0.75, "reason": "Fix Rational string argument handling for string p and q, small localized change."}
+{"instance_id": "sympy__sympy-24661", "score": 2, "confidence": 0.6, "reason": "Parser must add relational operator handling to the evaluate=False AST transformer for all comparison operators."}

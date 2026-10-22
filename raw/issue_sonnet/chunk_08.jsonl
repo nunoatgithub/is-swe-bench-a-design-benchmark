@@ -1,0 +1,50 @@
+{"instance_id": "sphinx-doc__sphinx-8120", "score": 1, "confidence": 0.6, "reason": "Locale dir ordering must be changed so user locale_dirs take precedence over built-in translations, a small localized change."}
+{"instance_id": "sphinx-doc__sphinx-8265", "score": 1, "confidence": 0.6, "reason": "Tuple default values need to be unparsed with parentheses in the AST unparser, a small localized fix."}
+{"instance_id": "sphinx-doc__sphinx-8269", "score": 1, "confidence": 0.8, "reason": "Check HTTP status via raise_for_status before anchor check in linkcheck, a few lines."}
+{"instance_id": "sphinx-doc__sphinx-8459", "score": 2, "confidence": 0.5, "reason": "Type aliases must be passed through the description-mode typehint recording path, touching a couple of places consistently."}
+{"instance_id": "sphinx-doc__sphinx-8475", "score": 0, "confidence": 0.9, "reason": "Add TooManyRedirects to the except clause for GET fallback."}
+{"instance_id": "sphinx-doc__sphinx-8548", "score": 2, "confidence": 0.55, "reason": "Attribute docstring lookup must also search base class namespaces while keeping existing behavior."}
+{"instance_id": "sphinx-doc__sphinx-8551", "score": 2, "confidence": 0.55, "reason": "Implicit xref resolution for info fields must follow module-scoped lookup semantics consistent with explicit roles."}
+{"instance_id": "sphinx-doc__sphinx-8593", "score": 1, "confidence": 0.65, "reason": "Variable documenter must honor :meta public: metadata when filtering private members, a small localized change."}
+{"instance_id": "sphinx-doc__sphinx-8595", "score": 0, "confidence": 0.85, "reason": "Check for __all__ is not None rather than truthiness."}
+{"instance_id": "sphinx-doc__sphinx-8621", "score": 2, "confidence": 0.6, "reason": "Replace the simple separator regexp with parsing logic that distinguishes separators from keystrokes, with edge cases."}
+{"instance_id": "sphinx-doc__sphinx-8638", "score": 2, "confidence": 0.5, "reason": "Need to restrict python domain xref resolution so instance variables do not fuzzy-match other variables, a design choice affecting lookup."}
+{"instance_id": "sphinx-doc__sphinx-8721", "score": 1, "confidence": 0.8, "reason": "Add a builder-name check in viewcode's page collection handler for epub when the option is false."}
+{"instance_id": "sphinx-doc__sphinx-9229", "score": 2, "confidence": 0.5, "reason": "Alias documenter handling of docstrings vs 'alias of' text needs consistent changes across documenters."}
+{"instance_id": "sphinx-doc__sphinx-9230", "score": 1, "confidence": 0.65, "reason": "Field type splitting regex must handle commas inside parentheses, a localized fix."}
+{"instance_id": "sphinx-doc__sphinx-9258", "score": 2, "confidence": 0.6, "reason": "Add support for | in type fields in the python domain's type parsing, with choices about how to split and render."}
+{"instance_id": "sphinx-doc__sphinx-9281", "score": 1, "confidence": 0.7, "reason": "Special-case Enum values in object_description to render as Class.member, small localized change."}
+{"instance_id": "sphinx-doc__sphinx-9320", "score": 1, "confidence": 0.8, "reason": "Allow empty input on the root path prompt to exit by adjusting the validator."}
+{"instance_id": "sphinx-doc__sphinx-9367", "score": 0, "confidence": 0.85, "reason": "Add trailing comma for single-element tuples in the AST unparser."}
+{"instance_id": "sphinx-doc__sphinx-9461", "score": 2, "confidence": 0.55, "reason": "Autodoc must detect classmethod-wrapped properties across class hierarchies and document them consistently."}
+{"instance_id": "sphinx-doc__sphinx-9591", "score": 1, "confidence": 0.6, "reason": "Property return annotation should be emitted via type xref nodes rather than plain text, a small change."}
+{"instance_id": "sphinx-doc__sphinx-9602", "score": 2, "confidence": 0.6, "reason": "Literal values need to be excluded from xref generation in annotation parsing, with edge cases for nested content."}
+{"instance_id": "sphinx-doc__sphinx-9658", "score": 2, "confidence": 0.5, "reason": "Mock objects need correct __name__/__qualname__ handling so the Bases display works, requiring thought about mock semantics."}
+{"instance_id": "sphinx-doc__sphinx-9673", "score": 2, "confidence": 0.55, "reason": "Typehint description merging must recognize napoleon-generated return fields, touching consistency between extensions."}
+{"instance_id": "sphinx-doc__sphinx-9698", "score": 0, "confidence": 0.85, "reason": "Remove parens from the index entry for property-option methods, a one-line change."}
+{"instance_id": "sphinx-doc__sphinx-9711", "score": 1, "confidence": 0.85, "reason": "Compare extension versions using version parsing instead of strings, a few lines."}
+{"instance_id": "sympy__sympy-11618", "score": 1, "confidence": 0.85, "reason": "Pad shorter point with zeros when zipping coordinates in distance, small localized fix."}
+{"instance_id": "sympy__sympy-12096", "score": 1, "confidence": 0.8, "reason": "Call evalf on the result of _imp_ in Function._eval_evalf, a one-or-two line change."}
+{"instance_id": "sympy__sympy-12419", "score": 2, "confidence": 0.5, "reason": "Identity matrix element summation requires correct handling of symbolic indices in Sum over Identity, with edge cases."}
+{"instance_id": "sympy__sympy-12481", "score": 2, "confidence": 0.65, "reason": "Permutation constructor must compose non-disjoint cycles in order, replacing the disjointness check and modifying cycle handling."}
+{"instance_id": "sympy__sympy-12489", "score": 3, "confidence": 0.6, "reason": "Making Permutation subclassable requires refactoring _af_new and instance creation across the class to use cls consistently."}
+{"instance_id": "sympy__sympy-13031", "score": 1, "confidence": 0.7, "reason": "Fix hstack/vstack handling of zero-row/column matrices in stacking logic, small localized change."}
+{"instance_id": "sympy__sympy-13091", "score": 2, "confidence": 0.6, "reason": "Return NotImplemented across comparison methods in multiple places, requiring consistency across core classes."}
+{"instance_id": "sympy__sympy-13372", "score": 0, "confidence": 0.9, "reason": "Add else: raise NotImplementedError to the elif chain, as the issue proposes."}
+{"instance_id": "sympy__sympy-13480", "score": 0, "confidence": 0.95, "reason": "Typo: cotm should be cothm in the hyperbolic eval."}
+{"instance_id": "sympy__sympy-13551", "score": 3, "confidence": 0.5, "reason": "Product evaluation of n + 1/2**k is wrong and needs correct handling of the term structure, possibly new q-Pochhammer semantics."}
+{"instance_id": "sympy__sympy-13615", "score": 2, "confidence": 0.55, "reason": "Complement of FiniteSet with mixed symbols and numbers needs correct splitting logic with symbolic membership."}
+{"instance_id": "sympy__sympy-13647", "score": 1, "confidence": 0.8, "reason": "Column index offset bug in col_insert's entry function, a small localized fix."}
+{"instance_id": "sympy__sympy-13757", "score": 2, "confidence": 0.6, "reason": "Need Poly to take precedence in reflected multiplication, e.g. via _op_priority, with compatibility concerns."}
+{"instance_id": "sympy__sympy-13798", "score": 2, "confidence": 0.65, "reason": "Allow arbitrary mul_symbol in latex printer while staying backward compatible with existing choices."}
+{"instance_id": "sympy__sympy-13852", "score": 2, "confidence": 0.5, "reason": "Add polylog evaluation special cases and fix expand_func to drop exp_polar, several places and mathematical care."}
+{"instance_id": "sympy__sympy-13877", "score": 2, "confidence": 0.5, "reason": "Determinant via Bareiss with symbolic entries yields NaN; fix needs choosing algorithm or guards for non-integer entries."}
+{"instance_id": "sympy__sympy-13878", "score": 3, "confidence": 0.65, "reason": "Add precomputed CDFs for many distributions, each requiring correct formulas and testing across many classes."}
+{"instance_id": "sympy__sympy-13974", "score": 2, "confidence": 0.55, "reason": "Handle Pow of TensorProduct in expansion and simplification, requiring choices in both tensor_product_simp and expand."}
+{"instance_id": "sympy__sympy-14248", "score": 2, "confidence": 0.55, "reason": "Printers (str, pretty, latex) must handle MatAdd with negative coefficients consistently across three printers."}
+{"instance_id": "sympy__sympy-14531", "score": 2, "confidence": 0.6, "reason": "Printer settings must be propagated to subexpression printing in many StrPrinter methods, and related tests adjusted."}
+{"instance_id": "sympy__sympy-14711", "score": 1, "confidence": 0.8, "reason": "Handle zero in Vector.__add__ (sum starts with 0), a small localized change."}
+{"instance_id": "sympy__sympy-14976", "score": 1, "confidence": 0.7, "reason": "Add Rational handling to the mpmath printer so rationals are wrapped in mpf, small localized change."}
+{"instance_id": "sympy__sympy-15017", "score": 1, "confidence": 0.8, "reason": "Make __len__ return loop_size for rank-0 arrays in NDimArray implementations."}
+{"instance_id": "sympy__sympy-15345", "score": 1, "confidence": 0.8, "reason": "Add Max/Min handling to the Mathematica printer with square brackets and argument ordering."}
+{"instance_id": "sympy__sympy-15349", "score": 0, "confidence": 0.85, "reason": "Sign error in a rotation matrix element in to_rotation_matrix."}

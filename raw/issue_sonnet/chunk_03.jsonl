@@ -1,0 +1,50 @@
+{"instance_id": "django__django-14349", "score": 1, "confidence": 0.6, "reason": "Need to explicitly reject URLs containing LF/CR/tab early, a small check with a minor design choice."}
+{"instance_id": "django__django-14351", "score": 2, "confidence": 0.5, "reason": "Requires understanding of subquery column selection for __in with Q OR in query internals and choosing a correct place to restrict default cols."}
+{"instance_id": "django__django-14373", "score": 0, "confidence": 0.95, "reason": "Zero-pad the year to four digits in Y()."}
+{"instance_id": "django__django-14376", "score": 0, "confidence": 0.95, "reason": "Rename db/passwd kwargs to database/password."}
+{"instance_id": "django__django-14404", "score": 0, "confidence": 0.9, "reason": "Use request.path instead of path_info in the redirect."}
+{"instance_id": "django__django-14434", "score": 0, "confidence": 0.9, "reason": "Pass the table name string instead of a Table instance to Columns."}
+{"instance_id": "django__django-14493", "score": 0, "confidence": 0.9, "reason": "Initialize substitutions before the loop."}
+{"instance_id": "django__django-14500", "score": 1, "confidence": 0.7, "reason": "Executor unapply logic needs a small adjustment to not mark the squashed migration unapplied."}
+{"instance_id": "django__django-14534", "score": 0, "confidence": 0.9, "reason": "Return self.data['attrs']['id'] from id_for_label as the issue proposes."}
+{"instance_id": "django__django-14539", "score": 1, "confidence": 0.65, "reason": "Fix trailing punctuation handling in urlize with HTML-escaped entities, a localized logic change."}
+{"instance_id": "django__django-14559", "score": 1, "confidence": 0.9, "reason": "Sum update() return values in bulk_update and return them, handling the empty case."}
+{"instance_id": "django__django-14580", "score": 1, "confidence": 0.7, "reason": "Migration writer must add the models import when bases include models.Model, a small localized fix."}
+{"instance_id": "django__django-14608", "score": 1, "confidence": 0.8, "reason": "Add the nonform error class to the formset non-form ErrorList and document it."}
+{"instance_id": "django__django-14631", "score": 2, "confidence": 0.7, "reason": "Refactor _clean_fields and changed_data to go through BoundField with a new method, keeping behavior consistent."}
+{"instance_id": "django__django-14672", "score": 0, "confidence": 0.95, "reason": "Wrap through_fields in make_hashable in ManyToManyRel identity."}
+{"instance_id": "django__django-14725", "score": 2, "confidence": 0.7, "reason": "Needs new API (e.g. edit_only parameter) on model formsets and enforcement of no new objects across formset code."}
+{"instance_id": "django__django-14752", "score": 1, "confidence": 0.9, "reason": "Extract serialize_result method from get() as spelled out in the issue."}
+{"instance_id": "django__django-14765", "score": 0, "confidence": 0.95, "reason": "Replace the set check/conversion with an assert."}
+{"instance_id": "django__django-14771", "score": 1, "confidence": 0.8, "reason": "Pass sys._xoptions as -X args in the autoreloader's restart args, small localized change."}
+{"instance_id": "django__django-14787", "score": 1, "confidence": 0.85, "reason": "Use update_wrapper on the partial in method_decorator to preserve attributes."}
+{"instance_id": "django__django-14792", "score": 1, "confidence": 0.65, "reason": "Adjust timezone name handling for Etc/GMT offsets in _prepare_tzname_delta so the sign is not flipped."}
+{"instance_id": "django__django-14855", "score": 0, "confidence": 0.9, "reason": "Add current_app argument to reverse in get_admin_url as the issue shows."}
+{"instance_id": "django__django-14915", "score": 1, "confidence": 0.9, "reason": "Add __hash__ to ModelChoiceIteratorValue consistent with its __eq__."}
+{"instance_id": "django__django-14999", "score": 1, "confidence": 0.8, "reason": "Early return in RenameModel when old and new db_table are the same."}
+{"instance_id": "django__django-15022", "score": 2, "confidence": 0.65, "reason": "Rework admin search to build a single combined filter instead of chaining filters, while preserving semantics."}
+{"instance_id": "django__django-15037", "score": 1, "confidence": 0.8, "reason": "inspectdb must use the referenced column and emit to_field when it is not the primary key."}
+{"instance_id": "django__django-15098", "score": 2, "confidence": 0.6, "reason": "Language-prefix regex and lookup must handle script and region case-insensitively in multiple places."}
+{"instance_id": "django__django-15103", "score": 1, "confidence": 0.85, "reason": "Make element_id optional in the filter and util function, output script tag without id, and update docs."}
+{"instance_id": "django__django-15104", "score": 0, "confidence": 0.95, "reason": "Use pop('to', None) instead of del."}
+{"instance_id": "django__django-15127", "score": 1, "confidence": 0.8, "reason": "Update LEVEL_TAGS on setting_changed signal, a small localized change."}
+{"instance_id": "django__django-15128", "score": 2, "confidence": 0.6, "reason": "Alias generation in combine must avoid key/value overlap in change_map, requiring careful change in alias handling."}
+{"instance_id": "django__django-15161", "score": 1, "confidence": 0.8, "reason": "Add deconstructible paths to the expression classes for simplified paths, repetitive but small."}
+{"instance_id": "django__django-15252", "score": 2, "confidence": 0.65, "reason": "Make MigrationRecorder consult router allow_migrate in ensure_schema and related methods without breaking behavior."}
+{"instance_id": "django__django-15268", "score": 2, "confidence": 0.6, "reason": "Optimizer must reduce non-adjacent AlterFooTogether operations across intervening ops, requires reduce logic choices."}
+{"instance_id": "django__django-15277", "score": 0, "confidence": 0.9, "reason": "Only append MaxLengthValidator when max_length is not None."}
+{"instance_id": "django__django-15278", "score": 1, "confidence": 0.7, "reason": "SQLite schema editor must remake the table when adding a nullable unique column."}
+{"instance_id": "django__django-15280", "score": 2, "confidence": 0.55, "reason": "Prefetch cache population must avoid reusing the outer instance's deferred state, subtle fix in prefetch internals."}
+{"instance_id": "django__django-15315", "score": 0, "confidence": 0.9, "reason": "Revert Field.__hash__ to depend only on creation_counter."}
+{"instance_id": "django__django-15368", "score": 0, "confidence": 0.9, "reason": "Broaden the type check in bulk_update to include F or resolve_expression."}
+{"instance_id": "django__django-15375", "score": 2, "confidence": 0.55, "reason": "Aggregate default wrapping after annotate yields broken subquery SQL; needs understanding of aggregate resolution and selection."}
+{"instance_id": "django__django-15380", "score": 1, "confidence": 0.85, "reason": "Use correct model key when looking up the new state in generate_renamed_fields."}
+{"instance_id": "django__django-15382", "score": 2, "confidence": 0.55, "reason": "Exists with empty queryset raises EmptyResultSet incorrectly when negated; need to handle in Exists compilation without breaking where logic."}
+{"instance_id": "django__django-15467", "score": 0, "confidence": 0.95, "reason": "Use kwargs.get('empty_label') as the issue suggests."}
+{"instance_id": "django__django-15499", "score": 1, "confidence": 0.9, "reason": "Add reduce case for CreateModel with AlterModelManagers mirroring AlterModelOptions."}
+{"instance_id": "django__django-15503", "score": 2, "confidence": 0.6, "reason": "Fix key path compilation for numeric keys across SQLite, MySQL and Oracle has_key lookups consistently."}
+{"instance_id": "django__django-15525", "score": 1, "confidence": 0.7, "reason": "build_instance must set the instance db state before calling natural_key, a small change."}
+{"instance_id": "django__django-15554", "score": 2, "confidence": 0.6, "reason": "Join reuse must distinguish FilteredRelations by condition, touching alias/join identity logic."}
+{"instance_id": "django__django-15561", "score": 1, "confidence": 0.8, "reason": "Add choices to the non-database attributes list so SQLite AlterField is a noop."}
+{"instance_id": "django__django-15563", "score": 2, "confidence": 0.6, "reason": "Update query must use the correct parent link for non-first parents in multi-inheritance, requires careful handling in related updates."}
+{"instance_id": "django__django-15569", "score": 0, "confidence": 0.95, "reason": "Clear the lookup cache in _unregister_lookup."}

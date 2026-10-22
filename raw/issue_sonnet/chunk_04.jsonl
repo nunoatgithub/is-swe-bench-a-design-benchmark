@@ -1,0 +1,50 @@
+{"instance_id": "django__django-15572", "score": 0, "confidence": 0.85, "reason": "Skip empty-string dirs when collecting template directories for autoreload."}
+{"instance_id": "django__django-15629", "score": 3, "confidence": 0.7, "reason": "Collation must propagate from referenced pk to FK columns in schema editor, including alter-field related updates across modules."}
+{"instance_id": "django__django-15695", "score": 2, "confidence": 0.65, "reason": "RenameIndex backwards for unnamed indexes must restore the auto-generated name while keeping the noop behavior consistent."}
+{"instance_id": "django__django-15731", "score": 0, "confidence": 0.9, "reason": "Replace manual name/docstring copying with functools.wraps."}
+{"instance_id": "django__django-15732", "score": 1, "confidence": 0.65, "reason": "Constraint lookup in schema editor must exclude primary key constraints when dropping unique_together."}
+{"instance_id": "django__django-15741", "score": 0, "confidence": 0.8, "reason": "Coerce lazy format string to str in get_format."}
+{"instance_id": "django__django-15814", "score": 0, "confidence": 0.9, "reason": "Issue gives one-line fix using concrete_model._meta."}
+{"instance_id": "django__django-15851", "score": 0, "confidence": 0.9, "reason": "Reorder args so dbname is appended after extra parameters."}
+{"instance_id": "django__django-15863", "score": 1, "confidence": 0.8, "reason": "Handle Decimal input directly instead of converting through float in floatformat."}
+{"instance_id": "django__django-15916", "score": 2, "confidence": 0.6, "reason": "modelform_factory and metaclass must inherit formfield_callback from the base form Meta while preserving existing behavior."}
+{"instance_id": "django__django-15930", "score": 1, "confidence": 0.65, "reason": "Handle empty-match negated condition in When/Case compile by emitting an always-true expression."}
+{"instance_id": "django__django-15957", "score": 3, "confidence": 0.7, "reason": "Sliced prefetch querysets need new semantics such as window-function based per-parent limiting across prefetch machinery."}
+{"instance_id": "django__django-15973", "score": 1, "confidence": 0.6, "reason": "Resolve string through model in schema editor create_model, likely a small lookup fix."}
+{"instance_id": "django__django-15987", "score": 0, "confidence": 0.9, "reason": "Convert fixture dirs to str/Path before comparing duplicates."}
+{"instance_id": "django__django-16032", "score": 1, "confidence": 0.65, "reason": "Clear selected fields including alias-only ones when used as __in RHS."}
+{"instance_id": "django__django-16082", "score": 0, "confidence": 0.85, "reason": "Add MOD to the combined-expression output field resolution table for Decimal/Integer."}
+{"instance_id": "django__django-16100", "score": 0, "confidence": 0.85, "reason": "Wrap list_editable processing in transaction.atomic."}
+{"instance_id": "django__django-16116", "score": 1, "confidence": 0.7, "reason": "Make makemigrations --check exit without writing migrations, with small control-flow change."}
+{"instance_id": "django__django-16136", "score": 1, "confidence": 0.7, "reason": "Wrap the not-allowed response in an awaitable for async views."}
+{"instance_id": "django__django-16139", "score": 0, "confidence": 0.95, "reason": "Issue gives the exact one-line replacement for the password link."}
+{"instance_id": "django__django-16145", "score": 0, "confidence": 0.85, "reason": "Map address 0 to 0.0.0.0 in runserver output."}
+{"instance_id": "django__django-16255", "score": 0, "confidence": 0.9, "reason": "Catch ValueError in get_latest_lastmod as suggested."}
+{"instance_id": "django__django-16256", "score": 2, "confidence": 0.7, "reason": "Add async create variants to related managers in several places consistently."}
+{"instance_id": "django__django-16263", "score": 3, "confidence": 0.7, "reason": "Stripping unused annotations in count requires deciding reference tracking across filters, ordering, and other annotations."}
+{"instance_id": "django__django-16315", "score": 2, "confidence": 0.7, "reason": "Map unique_fields/update_fields to db_columns in the on-conflict SQL for backends consistently."}
+{"instance_id": "django__django-16333", "score": 0, "confidence": 0.9, "reason": "Call self.save_m2m() in UserCreationForm.save when commit is True."}
+{"instance_id": "django__django-16429", "score": 0, "confidence": 0.95, "reason": "Pass tzinfo to the pivot datetime as suggested."}
+{"instance_id": "django__django-16454", "score": 2, "confidence": 0.65, "reason": "Make add_subparsers propagate the parser class and error arguments to subparsers."}
+{"instance_id": "django__django-16485", "score": 1, "confidence": 0.8, "reason": "Guard precision computation so zero values do not produce prec 0."}
+{"instance_id": "django__django-16493", "score": 1, "confidence": 0.8, "reason": "Check for callable storage attribute rather than evaluated storage in deconstruct."}
+{"instance_id": "django__django-16502", "score": 2, "confidence": 0.6, "reason": "Runserver handler must strip body for HEAD requests without breaking other servers."}
+{"instance_id": "django__django-16527", "score": 0, "confidence": 0.95, "reason": "Add has_add_permission condition to show_save_as_new."}
+{"instance_id": "django__django-16560", "score": 2, "confidence": 0.7, "reason": "Add a new code parameter to BaseConstraint and subclasses, deconstruct, eq, and validate paths consistently."}
+{"instance_id": "django__django-16569", "score": 0, "confidence": 0.95, "reason": "Issue provides the exact index is not None check."}
+{"instance_id": "django__django-16595", "score": 1, "confidence": 0.85, "reason": "Add AlterField branch to AlterField.reduce."}
+{"instance_id": "django__django-16612", "score": 0, "confidence": 0.85, "reason": "Include query string in the APPEND_SLASH redirect."}
+{"instance_id": "django__django-16631", "score": 2, "confidence": 0.6, "reason": "Session auth hash verification must try fallback keys while keeping generation using the primary key."}
+{"instance_id": "django__django-16642", "score": 0, "confidence": 0.85, "reason": "Add br and Z encodings/content types mapping in FileResponse."}
+{"instance_id": "django__django-16661", "score": 1, "confidence": 0.65, "reason": "Fix lookup_allowed shortcut for concrete parent detection to not treat pk foreign keys as inheritance."}
+{"instance_id": "django__django-16662", "score": 1, "confidence": 0.8, "reason": "Change migration writer import sorting to put plain imports before from-imports."}
+{"instance_id": "django__django-16667", "score": 0, "confidence": 0.9, "reason": "Catch OverflowError alongside ValueError in value_from_datadict."}
+{"instance_id": "django__django-16801", "score": 1, "confidence": 0.8, "reason": "Only connect the post_init handler when width_field or height_field is set."}
+{"instance_id": "django__django-16819", "score": 1, "confidence": 0.7, "reason": "Add reduce rules for AddIndex/RemoveIndex pairs in the optimizer."}
+{"instance_id": "django__django-16877", "score": 1, "confidence": 0.85, "reason": "Add a new filter mirroring safeseq using conditional_escape, plus docs."}
+{"instance_id": "django__django-16899", "score": 0, "confidence": 0.9, "reason": "Include the field name in the readonly_fields check error message."}
+{"instance_id": "django__django-16901", "score": 1, "confidence": 0.75, "reason": "Rewrite XOR fallback to compute parity rather than exactly-one."}
+{"instance_id": "django__django-16938", "score": 2, "confidence": 0.55, "reason": "Need to decide how serializer m2m querysets avoid deferring select_related fields while keeping the optimization."}
+{"instance_id": "django__django-16950", "score": 2, "confidence": 0.5, "reason": "Inline formset handling of to_field with default UUID needs careful change to form/formset save logic."}
+{"instance_id": "django__django-17029", "score": 0, "confidence": 0.95, "reason": "Add cache_clear call for get_swappable_settings_name in clear_cache."}
+{"instance_id": "django__django-17084", "score": 2, "confidence": 0.55, "reason": "Aggregate over window annotations requires subquery handling in aggregate query building."}

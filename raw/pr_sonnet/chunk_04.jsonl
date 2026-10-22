@@ -1,0 +1,50 @@
+{"instance_id": "django__django-15572", "score": 0, "insufficient_info": false, "confidence": 0.7, "reason": "Title describes ignoring empty directory names in a check, a small filter."}
+{"instance_id": "django__django-15629", "score": 3, "insufficient_info": false, "confidence": 0.5, "reason": "Propagating collations to related fields in migrations touches schema editor logic across fields and backends."}
+{"instance_id": "django__django-15695", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Making RenameIndex a noop when names match is a small localized condition."}
+{"instance_id": "django__django-15731", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Preserving wrapper assignment for manager methods is a small localized change (functools.wraps style)."}
+{"instance_id": "django__django-15732", "score": 2, "insufficient_info": false, "confidence": 0.7, "reason": "Two cases (primary key and unique=True) need distinct handling and constraint name heuristics."}
+{"instance_id": "django__django-15741", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Handling a lazy format string in date filter is a small localized fix."}
+{"instance_id": "django__django-15814", "score": 0, "insufficient_info": false, "confidence": 0.6, "reason": "Proxy model crash with only() after select_related is typically a one-line use of concrete model meta."}
+{"instance_id": "django__django-15851", "score": 0, "insufficient_info": false, "confidence": 0.85, "reason": "Reordering parameters before the database name is a simple argument order change."}
+{"instance_id": "django__django-15863", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Fixing the repr vs str decimal conversion is a small change with some thought."}
+{"instance_id": "django__django-15916", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Supports Meta formfield_callback and changes modelform_factory defaulting, needing consistent behavior in a few places."}
+{"instance_id": "django__django-15930", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Handling a When() condition that matches everything is a localized edge-case fix."}
+{"instance_id": "django__django-15957", "score": 3, "insufficient_info": false, "confidence": 0.7, "reason": "Adds sliced prefetch support via window functions, new semantics in prefetch machinery."}
+{"instance_id": "django__django-15973", "score": 1, "insufficient_info": false, "confidence": 0.5, "reason": "Regression fix for m2m through model in another app, likely a localized change in schema/autodetector."}
+{"instance_id": "django__django-15987", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Normalizing Path instances when detecting duplicate fixture dirs is small and localized."}
+{"instance_id": "django__django-16032", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Fixing __in with annotate and alias subqueries requires understanding which select columns to clear, a moderately subtle query change."}
+{"instance_id": "django__django-16082", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Adding MOD to combined expression output field resolution, plus a small design question on Float+Decimal."}
+{"instance_id": "django__django-16100", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Wrapping list_editable processing in a transaction is a small localized change."}
+{"instance_id": "django__django-16116", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Reordering makemigrations --check to exit before writing is a small localized change."}
+{"instance_id": "django__django-16136", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Returning an async-wrapped response when the view has async handlers is a small localized change."}
+{"instance_id": "django__django-16139", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Fixing the password reset link format in help text is a one-line change."}
+{"instance_id": "django__django-16145", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Corrects displayed output for 0 address, a trivial mapping to 0.0.0.0."}
+{"instance_id": "django__django-16255", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Catching an error on empty items is a trivial missing check."}
+{"instance_id": "django__django-16256", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Adding async methods on related managers that delegate properly is small and clear."}
+{"instance_id": "django__django-16263", "score": 3, "insufficient_info": false, "confidence": 0.8, "reason": "Optimizes aggregation by pruning unused annotations and avoiding subquery pushdown, with design tradeoffs in query internals."}
+{"instance_id": "django__django-16315", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Mapping field names to db_column in bulk_create conflict clauses is a localized fix."}
+{"instance_id": "django__django-16333", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Calling save_m2m after saving in UserCreationForm is a one-line addition."}
+{"instance_id": "django__django-16429", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Handling tzinfo when building the pivot datetime in timesince is a small localized fix."}
+{"instance_id": "django__django-16454", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Passing an argument through to subparsers requires a small custom parser subclass change."}
+{"instance_id": "django__django-16485", "score": 0, "insufficient_info": false, "confidence": 0.7, "reason": "Edge case crash fix in floatformat, a small boundary adjustment."}
+{"instance_id": "django__django-16493", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Preserving callable storage when it returns default_storage is a small conditional in deconstruct."}
+{"instance_id": "django__django-16502", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Stripping the body for HEAD requests in runserver is small and localized."}
+{"instance_id": "django__django-16527", "score": 0, "insufficient_info": false, "confidence": 0.9, "reason": "Adds a has_add_permission check to a condition."}
+{"instance_id": "django__django-16560", "score": 2, "insufficient_info": false, "confidence": 0.7, "reason": "New API parameter on constraints requires design of the signature and consistency across subclasses."}
+{"instance_id": "django__django-16569", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Adds a None check for index in add_fields."}
+{"instance_id": "django__django-16595", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Adds a reduce rule for AlterField in the optimizer, small and localized."}
+{"instance_id": "django__django-16612", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Use full path including query string in redirect, a one-line change."}
+{"instance_id": "django__django-16631", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Session validation with rotated secret keys needs fallback keys handling in hash verification, requiring choices about compatibility."}
+{"instance_id": "django__django-16642", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Adding content type mappings for compress and brotli extensions is a small localized change."}
+{"instance_id": "django__django-16661", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "lookup_allowed logic for OneToOne primary keys and nested relations involves subtle edge cases."}
+{"instance_id": "django__django-16662", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Changing import sorting in the migration writer is a small localized change with clear desired behavior."}
+{"instance_id": "django__django-16667", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Catching OverflowError additionally is a trivial missing exception."}
+{"instance_id": "django__django-16801", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Conditionally connecting the signal only when width/height fields exist is a small change."}
+{"instance_id": "django__django-16819", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Adding optimizer reduce rules for Add/RemoveIndex is small and localized."}
+{"instance_id": "django__django-16877", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Adding a new template filter mirroring existing escape/safeseq patterns, plus docs."}
+{"instance_id": "django__django-16899", "score": 0, "insufficient_info": false, "confidence": 0.85, "reason": "Adding the field name to a check message is a trivial text change."}
+{"instance_id": "django__django-16901", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Fixing the fallback SQL to use parity instead of exactly-one is a localized logic change."}
+{"instance_id": "django__django-16938", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Regression fix in serializer queryset handling, likely clearing select_related, a small change."}
+{"instance_id": "django__django-16950", "score": 2, "insufficient_info": false, "confidence": 0.4, "reason": "Inline formsets with to_field defaults involve subtle interactions in form handling, though the body gives no details."}
+{"instance_id": "django__django-17029", "score": 0, "insufficient_info": false, "confidence": 0.9, "reason": "Adds one cache_clear call to clear_cache."}
+{"instance_id": "django__django-17084", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Regression fix for aggregate referencing window functions, likely a localized condition in get_aggregation."}

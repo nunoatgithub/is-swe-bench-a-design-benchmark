@@ -1,0 +1,50 @@
+{"instance_id": "scikit-learn__scikit-learn-10844", "score": 0, "insufficient_info": false, "confidence": 0.9, "reason": "Cast two values to int64 to avoid overflow."}
+{"instance_id": "scikit-learn__scikit-learn-10908", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Add vocabulary validation calls in two methods."}
+{"instance_id": "scikit-learn__scikit-learn-11310", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Time the refit and store an attribute in the search classes, small localized addition."}
+{"instance_id": "scikit-learn__scikit-learn-11578", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Fix to pass the multinomial setting to the scoring logistic regression in a localized spot, with test design choices."}
+{"instance_id": "scikit-learn__scikit-learn-12585", "score": 1, "insufficient_info": false, "confidence": 0.85, "reason": "Skip cloning for parameters that are types, a small condition."}
+{"instance_id": "scikit-learn__scikit-learn-12682", "score": 2, "insufficient_info": false, "confidence": 0.7, "reason": "Adds a new parameter across three estimators and plumbs it through to the underlying solver."}
+{"instance_id": "scikit-learn__scikit-learn-12973", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Needs an API choice about copy_X in fit while keeping backward compatibility."}
+{"instance_id": "scikit-learn__scikit-learn-13124", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Change how random state is applied per class when shuffling, localized but needs thought."}
+{"instance_id": "scikit-learn__scikit-learn-13135", "score": 0, "insufficient_info": false, "confidence": 0.9, "reason": "Add a sort of centers before building bin edges."}
+{"instance_id": "scikit-learn__scikit-learn-13142", "score": 1, "insufficient_info": false, "confidence": 0.85, "reason": "Move the final e-step after setting best params."}
+{"instance_id": "scikit-learn__scikit-learn-13328", "score": 1, "insufficient_info": false, "confidence": 0.5, "reason": "Fix Huber with boolean X, likely a small dtype conversion, though the body is minimal."}
+{"instance_id": "scikit-learn__scikit-learn-13439", "score": 0, "insufficient_info": false, "confidence": 0.85, "reason": "Add a __len__ method returning number of steps."}
+{"instance_id": "scikit-learn__scikit-learn-13496", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Expose an existing warm_start parameter in IsolationForest plus a test."}
+{"instance_id": "scikit-learn__scikit-learn-13779", "score": 1, "insufficient_info": false, "confidence": 0.75, "reason": "Handle None estimators when fitting with sample weights, a small check."}
+{"instance_id": "scikit-learn__scikit-learn-14053", "score": 0, "insufficient_info": false, "confidence": 0.85, "reason": "Use a None placeholder in feature names to fix single-feature case."}
+{"instance_id": "scikit-learn__scikit-learn-14087", "score": 0, "insufficient_info": false, "confidence": 0.95, "reason": "Use local variable instead of self attribute in a condition."}
+{"instance_id": "scikit-learn__scikit-learn-14141", "score": 0, "insufficient_info": false, "confidence": 0.95, "reason": "Add joblib to a dependency list."}
+{"instance_id": "scikit-learn__scikit-learn-14496", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Convert float min_samples and min_cluster_size to counts, small localized handling."}
+{"instance_id": "scikit-learn__scikit-learn-14629", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Add a classes_ attribute to MultiOutputClassifier."}
+{"instance_id": "scikit-learn__scikit-learn-14710", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Encode targets before early-stopping scoring, localized change."}
+{"instance_id": "scikit-learn__scikit-learn-14894", "score": 1, "insufficient_info": false, "confidence": 0.85, "reason": "Skip a computation when support vectors are empty and keep dual_coef_ consistent."}
+{"instance_id": "scikit-learn__scikit-learn-14983", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Add __repr__ to base class and adjust the repr builder."}
+{"instance_id": "scikit-learn__scikit-learn-15100", "score": 0, "insufficient_info": false, "confidence": 0.9, "reason": "Remove an unchanged-check so accents are always stripped."}
+{"instance_id": "scikit-learn__scikit-learn-25102", "score": 3, "insufficient_info": false, "confidence": 0.6, "reason": "Preserving dtypes through the set_output machinery requires design across the mixin and wrapping utilities with conditions."}
+{"instance_id": "scikit-learn__scikit-learn-25232", "score": 2, "insufficient_info": false, "confidence": 0.7, "reason": "Adds a new parameter with design choices, validation and plumbing to the initial imputer."}
+{"instance_id": "scikit-learn__scikit-learn-25747", "score": 1, "insufficient_info": false, "confidence": 0.65, "reason": "Stop overriding the index when wrapping output while keeping columns, a small change with reasoning."}
+{"instance_id": "scikit-learn__scikit-learn-25931", "score": 1, "insufficient_info": false, "confidence": 0.85, "reason": "Add a private validation-free method and call it in fit."}
+{"instance_id": "scikit-learn__scikit-learn-25973", "score": 1, "insufficient_info": false, "confidence": 0.85, "reason": "Call check_cv once beforehand and pass the result along."}
+{"instance_id": "scikit-learn__scikit-learn-26194", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Choose a better lower-limit threshold value for roc_curve with probabilities."}
+{"instance_id": "scikit-learn__scikit-learn-26323", "score": 1, "insufficient_info": false, "confidence": 0.75, "reason": "Make set_output also apply to the remainder transformer."}
+{"instance_id": "scikit-learn__scikit-learn-9288", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Generate seeds in the single-job path so results match across n_jobs."}
+{"instance_id": "sphinx-doc__sphinx-10323", "score": 1, "insufficient_info": false, "confidence": 0.85, "reason": "Reorder processing of prepend and dedent options."}
+{"instance_id": "sphinx-doc__sphinx-10435", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Remove extra whitespace in LaTeX output for inline code, small localized change."}
+{"instance_id": "sphinx-doc__sphinx-10449", "score": 1, "insufficient_info": false, "confidence": 0.5, "reason": "Hide return annotation in autodoc under certain settings, likely small, little detail given."}
+{"instance_id": "sphinx-doc__sphinx-10466", "score": 0, "insufficient_info": false, "confidence": 0.85, "reason": "Deduplicate locations before output."}
+{"instance_id": "sphinx-doc__sphinx-10614", "score": 2, "insufficient_info": false, "confidence": 0.7, "reason": "Fixes class-to-URL mapping for intersphinx and relative-path handling in SVG across extension code."}
+{"instance_id": "sphinx-doc__sphinx-10673", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Make toctree accept special docnames, which touches the toctree handling and needs care for existing validation."}
+{"instance_id": "sphinx-doc__sphinx-11445", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Adjust prolog insertion so it doesn't split titles starting with roles."}
+{"instance_id": "sphinx-doc__sphinx-11510", "score": 2, "insufficient_info": false, "confidence": 0.7, "reason": "Emit source-read events for included files, requiring hooking into the include directive and keeping behavior consistent."}
+{"instance_id": "sphinx-doc__sphinx-7440", "score": 0, "insufficient_info": false, "confidence": 0.85, "reason": "Make glossary term duplicate check case sensitive."}
+{"instance_id": "sphinx-doc__sphinx-7454", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Convert a None return annotation to a cross-reference, small change."}
+{"instance_id": "sphinx-doc__sphinx-7462", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Handle empty tuple in annotation parsing to avoid IndexError."}
+{"instance_id": "sphinx-doc__sphinx-7590", "score": 3, "insufficient_info": false, "confidence": 0.6, "reason": "Adding user-defined literal parsing to the C++ expression parser is new grammar support with several parts."}
+{"instance_id": "sphinx-doc__sphinx-7748", "score": 2, "insufficient_info": false, "confidence": 0.65, "reason": "Supporting multiple docstring signatures requires changes to autodoc signature handling and return values."}
+{"instance_id": "sphinx-doc__sphinx-7757", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Show default values for positional-only args in signature rendering."}
+{"instance_id": "sphinx-doc__sphinx-7889", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Fix mock handling of generic-typed classes, localized."}
+{"instance_id": "sphinx-doc__sphinx-7910", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Unwrap decorated functions via __wrapped__ in napoleon plus a test fix."}
+{"instance_id": "sphinx-doc__sphinx-7985", "score": 2, "insufficient_info": false, "confidence": 0.65, "reason": "New linkcheck behavior for local links with several cases to handle."}
+{"instance_id": "sphinx-doc__sphinx-8035", "score": 2, "insufficient_info": false, "confidence": 0.7, "reason": "Extend an option to accept a list of names, similar to special-members, with compatibility with the flag form."}
+{"instance_id": "sphinx-doc__sphinx-8056", "score": 2, "insufficient_info": false, "confidence": 0.65, "reason": "Change napoleon conversion rule to emit separate fields per parameter, with condition on option."}

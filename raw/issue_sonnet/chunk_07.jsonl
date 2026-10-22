@@ -1,0 +1,50 @@
+{"instance_id": "scikit-learn__scikit-learn-10844", "score": 0, "confidence": 0.6, "reason": "Rewrite the expression to avoid int overflow, as proposed."}
+{"instance_id": "scikit-learn__scikit-learn-10908", "score": 1, "confidence": 0.6, "reason": "Validate/set vocabulary in get_feature_names when vocabulary param given."}
+{"instance_id": "scikit-learn__scikit-learn-11310", "score": 1, "confidence": 0.6, "reason": "Time the refit and store refit_time_ attribute."}
+{"instance_id": "scikit-learn__scikit-learn-11578", "score": 1, "confidence": 0.6, "reason": "Pass multi_class (and related params) to LogisticRegression in scoring path."}
+{"instance_id": "scikit-learn__scikit-learn-12585", "score": 1, "confidence": 0.6, "reason": "Add isinstance(type) check in clone with a small behavior consideration."}
+{"instance_id": "scikit-learn__scikit-learn-12682", "score": 2, "confidence": 0.6, "reason": "Needs API choice for exposing max_iter (and possibly other Lasso params) in SparseCoder."}
+{"instance_id": "scikit-learn__scikit-learn-12973", "score": 1, "confidence": 0.6, "reason": "Make fit copy_X default None and fall back to the init value."}
+{"instance_id": "scikit-learn__scikit-learn-13124", "score": 2, "confidence": 0.6, "reason": "Shuffle logic in StratifiedKFold must be reworked to shuffle within strata while keeping compatibility."}
+{"instance_id": "scikit-learn__scikit-learn-13135", "score": 1, "confidence": 0.6, "reason": "Sort kmeans centers before computing bin edges."}
+{"instance_id": "scikit-learn__scikit-learn-13142", "score": 1, "confidence": 0.6, "reason": "Do a final e-step after best init so fit_predict matches predict."}
+{"instance_id": "scikit-learn__scikit-learn-13328", "score": 1, "confidence": 0.6, "reason": "Convert X to float in HuberRegressor check_X_y."}
+{"instance_id": "scikit-learn__scikit-learn-13439", "score": 0, "confidence": 0.6, "reason": "Add __len__ returning len(self.steps)."}
+{"instance_id": "scikit-learn__scikit-learn-13496", "score": 1, "confidence": 0.6, "reason": "Expose warm_start in __init__, docs and test."}
+{"instance_id": "scikit-learn__scikit-learn-13779", "score": 1, "confidence": 0.6, "reason": "Skip None estimators in sample_weight support check."}
+{"instance_id": "scikit-learn__scikit-learn-14053", "score": 1, "confidence": 0.6, "reason": "Fix feature name indexing for single-feature tree in export_text."}
+{"instance_id": "scikit-learn__scikit-learn-14087", "score": 1, "confidence": 0.6, "reason": "Fix coefs_paths indexing when refit=False for the non-multinomial case."}
+{"instance_id": "scikit-learn__scikit-learn-14141", "score": 0, "confidence": 0.6, "reason": "Add joblib to show_versions dependency list."}
+{"instance_id": "scikit-learn__scikit-learn-14496", "score": 0, "confidence": 0.6, "reason": "Convert computed min_samples to int, as proposed."}
+{"instance_id": "scikit-learn__scikit-learn-14629", "score": 2, "confidence": 0.6, "reason": "Need to handle per-output classes_ from estimators_ in cross_val_predict consistently."}
+{"instance_id": "scikit-learn__scikit-learn-14710", "score": 1, "confidence": 0.6, "reason": "Encode y_true with classes_ before scoring during early stopping."}
+{"instance_id": "scikit-learn__scikit-learn-14894", "score": 1, "confidence": 0.6, "reason": "Handle empty support vectors case in _sparse_fit to avoid division by zero."}
+{"instance_id": "scikit-learn__scikit-learn-14983", "score": 1, "confidence": 0.6, "reason": "Add __repr__ to the repeated CV splitters, needs param handling."}
+{"instance_id": "scikit-learn__scikit-learn-15100", "score": 0, "confidence": 0.6, "reason": "Remove the NFKD-equality early return in strip_accents_unicode."}
+{"instance_id": "scikit-learn__scikit-learn-25102", "score": 3, "confidence": 0.6, "reason": "New feature with API design (set_output dtypes preservation) across mixin and wrappers."}
+{"instance_id": "scikit-learn__scikit-learn-25232", "score": 2, "confidence": 0.6, "reason": "Add fill_value param, pass to SimpleImputer, validation and nan support."}
+{"instance_id": "scikit-learn__scikit-learn-25747", "score": 2, "confidence": 0.6, "reason": "Wrapping with pandas must handle outputs whose index differs in length; needs design choice."}
+{"instance_id": "scikit-learn__scikit-learn-25931", "score": 1, "confidence": 0.6, "reason": "Avoid feature-name warning by using internal scoring on validated array in fit."}
+{"instance_id": "scikit-learn__scikit-learn-25973", "score": 1, "confidence": 0.6, "reason": "Materialize cv splits iterable once before looping over candidates."}
+{"instance_id": "scikit-learn__scikit-learn-26194", "score": 2, "confidence": 0.6, "reason": "Choose how to handle extra threshold point for probability scores, with compatibility."}
+{"instance_id": "scikit-learn__scikit-learn-26323", "score": 1, "confidence": 0.6, "reason": "Include remainder estimator in set_output."}
+{"instance_id": "scikit-learn__scikit-learn-9288", "score": 2, "confidence": 0.6, "reason": "Need to make seeding/run behavior consistent between serial and parallel paths."}
+{"instance_id": "sphinx-doc__sphinx-10323", "score": 2, "confidence": 0.6, "reason": "Reorder prepend/dedent filter handling so dedent does not affect prepend/append."}
+{"instance_id": "sphinx-doc__sphinx-10435", "score": 1, "confidence": 0.6, "reason": "Adjust LaTeX writer output to avoid added whitespace with percent signs."}
+{"instance_id": "sphinx-doc__sphinx-10449", "score": 2, "confidence": 0.6, "reason": "Need to suppress return annotation for classes in description mode across code paths."}
+{"instance_id": "sphinx-doc__sphinx-10466", "score": 1, "confidence": 0.6, "reason": "Deduplicate locations in Message init."}
+{"instance_id": "sphinx-doc__sphinx-10614", "score": 2, "confidence": 0.6, "reason": "Compute SVG link prefix correctly relative to the SVG location in inheritance diagram."}
+{"instance_id": "sphinx-doc__sphinx-10673", "score": 2, "confidence": 0.6, "reason": "Allow special generated docnames in toctree, touching toctree handling and resolution."}
+{"instance_id": "sphinx-doc__sphinx-11445", "score": 2, "confidence": 0.6, "reason": "Fix prolog insertion so it does not break docinfo-like first-heading detection."}
+{"instance_id": "sphinx-doc__sphinx-11510", "score": 2, "confidence": 0.6, "reason": "Make source-read modifications apply to included files, requires hooking include handling."}
+{"instance_id": "sphinx-doc__sphinx-7440", "score": 1, "confidence": 0.6, "reason": "Make glossary term lookup case-sensitive for duplicate check."}
+{"instance_id": "sphinx-doc__sphinx-7454", "score": 1, "confidence": 0.6, "reason": "Make None in signature annotations produce a cross reference."}
+{"instance_id": "sphinx-doc__sphinx-7462", "score": 1, "confidence": 0.6, "reason": "Handle empty tuple in unparse without popping empty list."}
+{"instance_id": "sphinx-doc__sphinx-7590", "score": 3, "confidence": 0.6, "reason": "Adding UDL support to the C++ domain parser requires new literal grammar handling."}
+{"instance_id": "sphinx-doc__sphinx-7748", "score": 3, "confidence": 0.6, "reason": "Supporting multiple overloaded docstring signatures changes autodoc design and behavior."}
+{"instance_id": "sphinx-doc__sphinx-7757", "score": 1, "confidence": 0.6, "reason": "Fix default value handling for positional-only args in signature parsing."}
+{"instance_id": "sphinx-doc__sphinx-7889", "score": 1, "confidence": 0.6, "reason": "Make mock subclass naming robust to non-string names like TypeVar."}
+{"instance_id": "sphinx-doc__sphinx-7910", "score": 2, "confidence": 0.6, "reason": "Resolve owning class of decorated methods without relying on __globals__."}
+{"instance_id": "sphinx-doc__sphinx-7985", "score": 3, "confidence": 0.6, "reason": "Implement local link checking in linkcheck builder with new semantics."}
+{"instance_id": "sphinx-doc__sphinx-8035", "score": 2, "confidence": 0.6, "reason": "Change private-members option to accept args and update filtering logic."}
+{"instance_id": "sphinx-doc__sphinx-8056", "score": 2, "confidence": 0.6, "reason": "Napoleon must parse comma-separated names and render optional properly."}

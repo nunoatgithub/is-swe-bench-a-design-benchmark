@@ -1,0 +1,50 @@
+{"instance_id": "django__django-13128", "score": 3, "confidence": 0.6, "reason": "Making temporal subtraction infer output types without ExpressionWrapper requires changes to expression type resolution and combined-expression semantics across datetime/duration cases."}
+{"instance_id": "django__django-13158", "score": 2, "confidence": 0.6, "reason": "none() on a combined query must clear the combinator state, requiring care about how union queries are handled."}
+{"instance_id": "django__django-13195", "score": 1, "confidence": 0.7, "reason": "delete_cookie needs to pass samesite/secure through, a small localized change with some thought about preserving the original attributes."}
+{"instance_id": "django__django-13212", "score": 2, "confidence": 0.7, "reason": "Every built-in validator must pass params with the value to ValidationError consistently across several places."}
+{"instance_id": "django__django-13279", "score": 2, "confidence": 0.6, "reason": "Needs a compatibility path in session encode/decode for sha1 mode, with a choice of how to implement the legacy format."}
+{"instance_id": "django__django-13297", "score": 2, "confidence": 0.55, "reason": "The lazy kwargs in URL-based views need to be resolved/handled in a way that stays compatible with deprecation behavior."}
+{"instance_id": "django__django-13315", "score": 1, "confidence": 0.65, "reason": "Apply distinct to the limit_choices_to queryset in formfield, a localized change."}
+{"instance_id": "django__django-13343", "score": 1, "confidence": 0.65, "reason": "Store the original callable and return it in deconstruct while still evaluating at use, a small change in one field class."}
+{"instance_id": "django__django-13344", "score": 2, "confidence": 0.55, "reason": "Middleware chain adaptation in the ASGI handler must be fixed so the first middleware gets a real response, touching async/sync handling logic."}
+{"instance_id": "django__django-13346", "score": 2, "confidence": 0.65, "reason": "A new __in lookup for key transforms must be implemented and registered with per-backend SQL handling."}
+{"instance_id": "django__django-13363", "score": 1, "confidence": 0.8, "reason": "Use the passed tzinfo via get_tzname in TruncDate and TruncTime, a small localized change."}
+{"instance_id": "django__django-13401", "score": 2, "confidence": 0.7, "reason": "Field __eq__, __hash__ and __lt__ must be changed consistently while preserving ordering for unaffected cases."}
+{"instance_id": "django__django-13406", "score": 2, "confidence": 0.6, "reason": "Restoring the iterable class when a query is assigned from a pickled one needs a decision on where to detect values/values_list state."}
+{"instance_id": "django__django-13410", "score": 0, "confidence": 0.95, "reason": "The issue gives the exact fix, wrapping flock in try/except and returning True or False."}
+{"instance_id": "django__django-13417", "score": 1, "confidence": 0.7, "reason": "The ordered property must account for GROUP BY queries, a small condition added in one place."}
+{"instance_id": "django__django-13449", "score": 2, "confidence": 0.55, "reason": "SQLite cast of window function expressions with DecimalField needs the CAST to wrap the entire OVER expression, requiring a compiler-level adjustment."}
+{"instance_id": "django__django-13512", "score": 1, "confidence": 0.7, "reason": "Pass ensure_ascii=False when serializing JSON in the form field and related widget handling, a few small edits."}
+{"instance_id": "django__django-13513", "score": 0, "confidence": 0.85, "reason": "The issue supplies the exact replacement honoring __suppress_context__."}
+{"instance_id": "django__django-13516", "score": 1, "confidence": 0.75, "reason": "Add a flush method to OutputWrapper that delegates to the underlying stream."}
+{"instance_id": "django__django-13551", "score": 1, "confidence": 0.7, "reason": "Add the user's email to the token hash value, with a minor consideration for users without an email field."}
+{"instance_id": "django__django-13568", "score": 1, "confidence": 0.75, "reason": "Extend the auth.E003 check to also accept a total UniqueConstraint on the username field, a localized change."}
+{"instance_id": "django__django-13569", "score": 1, "confidence": 0.75, "reason": "Skip Random expressions when adding order_by expressions to group by, as the issue already proposes."}
+{"instance_id": "django__django-13590", "score": 0, "confidence": 0.9, "reason": "Expand the iterator into the namedtuple constructor with *, as stated in the issue."}
+{"instance_id": "django__django-13658", "score": 0, "confidence": 0.95, "reason": "Pass prog=self.prog_name to CommandParser, exactly as proposed."}
+{"instance_id": "django__django-13670", "score": 0, "confidence": 0.85, "reason": "Zero-pad the two-digit year format so years under 1000 render correctly, a one-line change."}
+{"instance_id": "django__django-13741", "score": 0, "confidence": 0.8, "reason": "Set disabled=True by default in ReadOnlyPasswordHashField's init kwargs."}
+{"instance_id": "django__django-13786", "score": 1, "confidence": 0.7, "reason": "CreateModel.reduce for AlterModelOptions must drop options not in the altered set, mirroring state_forwards logic."}
+{"instance_id": "django__django-13794", "score": 1, "confidence": 0.7, "reason": "The add filter needs to handle lazy strings, likely by forcing evaluation or using string concatenation fallback."}
+{"instance_id": "django__django-13807", "score": 0, "confidence": 0.9, "reason": "Quote the table names in the PRAGMA statements, an obvious mechanical fix."}
+{"instance_id": "django__django-13809", "score": 2, "confidence": 0.6, "reason": "Adding a --skip-checks option to runserver requires option plumbing and gating checks in both the command and autoreload path."}
+{"instance_id": "django__django-13810", "score": 1, "confidence": 0.7, "reason": "Avoid overwriting the handler when MiddlewareNotUsed is raised, a small localized change in the handler loader."}
+{"instance_id": "django__django-13820", "score": 0, "confidence": 0.8, "reason": "Augment the existing __file__ check with an isinstance(m.__path__, list) condition, as specified."}
+{"instance_id": "django__django-13821", "score": 1, "confidence": 0.65, "reason": "Raise the minimum SQLite version check and remove version-specific workarounds, simple but in a few spots."}
+{"instance_id": "django__django-13837", "score": 2, "confidence": 0.7, "reason": "Rewrite get_child_arguments to detect -m via __main__.__spec__.parent, with care about edge cases and compatibility."}
+{"instance_id": "django__django-13925", "score": 2, "confidence": 0.6, "reason": "The W042 check must recognize inherited primary keys, requiring understanding of model inheritance and parent links."}
+{"instance_id": "django__django-13933", "score": 1, "confidence": 0.75, "reason": "Include the value in the invalid_choice message and pass params when raising the ValidationError."}
+{"instance_id": "django__django-13964", "score": 2, "confidence": 0.6, "reason": "Fix must refresh the FK attname when the related object's pk is set after assignment, with care around save semantics."}
+{"instance_id": "django__django-14007", "score": 2, "confidence": 0.6, "reason": "Apply field/db converters to returning fields on insert, in both create and bulk_create paths."}
+{"instance_id": "django__django-14011", "score": 2, "confidence": 0.55, "reason": "Make the threaded test server close DB connections at thread end or wait for threads, requiring choices about server shutdown."}
+{"instance_id": "django__django-14017", "score": 2, "confidence": 0.6, "reason": "Make Q and conditional expressions combine symmetrically, needing a decision between __rand__ on Exists or relaxing Q._combine."}
+{"instance_id": "django__django-14034", "score": 2, "confidence": 0.6, "reason": "MultiValueField.clean needs to enforce required subfields when the whole field is empty and not required, with careful edge-case handling."}
+{"instance_id": "django__django-14053", "score": 2, "confidence": 0.6, "reason": "post_process must yield each original file only once across multiple passes while keeping stats and adjustments consistent."}
+{"instance_id": "django__django-14089", "score": 0, "confidence": 0.95, "reason": "Add a __reversed__ method to OrderedSet, as the issue states."}
+{"instance_id": "django__django-14122", "score": 1, "confidence": 0.65, "reason": "Exclude Meta.ordering fields from GROUP BY in the compiler, a small localized change."}
+{"instance_id": "django__django-14140", "score": 1, "confidence": 0.75, "reason": "Fix Q.deconstruct for single non-tuple children, by removing or guarding the special case."}
+{"instance_id": "django__django-14155", "score": 1, "confidence": 0.75, "reason": "Unwrap functools.partial in ResolverMatch.__init__ or __repr__, a small localized change."}
+{"instance_id": "django__django-14170", "score": 1, "confidence": 0.7, "reason": "Stop registering the optimized year lookups for iso_year, a small change in registration."}
+{"instance_id": "django__django-14238", "score": 0, "confidence": 0.85, "reason": "Fix AutoFieldMeta.__subclasscheck__ to use issubclass over the _subclasses, as the issue explains."}
+{"instance_id": "django__django-14311", "score": 1, "confidence": 0.7, "reason": "Adjust get_child_arguments to preserve the full dotted module name when the main spec isn't a package."}
+{"instance_id": "django__django-14315", "score": 0, "confidence": 0.9, "reason": "Return None instead of an empty dict for env in the postgresql client when no env vars are set."}

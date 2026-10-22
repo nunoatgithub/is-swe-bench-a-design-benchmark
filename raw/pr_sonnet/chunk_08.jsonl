@@ -1,0 +1,50 @@
+{"instance_id": "sphinx-doc__sphinx-8120", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Reorder priority of user vs system message catalogs, small localized change."}
+{"instance_id": "sphinx-doc__sphinx-8265", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Add tuple literal support to the AST unparser, a small localized addition."}
+{"instance_id": "sphinx-doc__sphinx-8269", "score": 1, "insufficient_info": false, "confidence": 0.65, "reason": "Make linkcheck report HTTP errors before anchor check, small localized change."}
+{"instance_id": "sphinx-doc__sphinx-8459", "score": null, "insufficient_info": true, "confidence": 0.8, "reason": "Body only references the issue and the title does not describe the fix."}
+{"instance_id": "sphinx-doc__sphinx-8475", "score": 1, "insufficient_info": false, "confidence": 0.75, "reason": "Add TooManyRedirects to the existing GET fallback exception handling."}
+{"instance_id": "sphinx-doc__sphinx-8548", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Scan superclass instance attributes via ModuleAnalyzer in member collection, requiring choices on integration."}
+{"instance_id": "sphinx-doc__sphinx-8551", "score": 2, "insufficient_info": false, "confidence": 0.55, "reason": "Set module/class search context on pending_xref nodes from field lists across field handling code."}
+{"instance_id": "sphinx-doc__sphinx-8593", "score": 2, "insufficient_info": false, "confidence": 0.65, "reason": "Reimplement variable member loading and module member helper to fetch docstrings earlier."}
+{"instance_id": "sphinx-doc__sphinx-8595", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Handle empty __all__ as no public members, a small condition fix."}
+{"instance_id": "sphinx-doc__sphinx-8621", "score": null, "insufficient_info": true, "confidence": 0.6, "reason": "Body gives only the issue reference; title hints at HTML generation fix but details are unclear."}
+{"instance_id": "sphinx-doc__sphinx-8638", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Disable cross-reference for :var: field, a small localized behavior change."}
+{"instance_id": "sphinx-doc__sphinx-8721", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Add a builder check before generating viewcode module pages."}
+{"instance_id": "sphinx-doc__sphinx-9229", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Feature to support variable comments for alias classes, needs some design though details are sparse."}
+{"instance_id": "sphinx-doc__sphinx-9230", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Change field name split from first to last whitespace."}
+{"instance_id": "sphinx-doc__sphinx-9258", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Support | union types in info-field-list type parsing, small feature."}
+{"instance_id": "sphinx-doc__sphinx-9281", "score": 1, "insufficient_info": false, "confidence": 0.65, "reason": "Improve rendering of enum default values, small localized change."}
+{"instance_id": "sphinx-doc__sphinx-9320", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Add validator allowing empty input in quickstart prompt, small change with some iteration."}
+{"instance_id": "sphinx-doc__sphinx-9367", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Fix one-element tuple rendering (trailing comma), mechanical."}
+{"instance_id": "sphinx-doc__sphinx-9461", "score": 3, "insufficient_info": false, "confidence": 0.6, "reason": "Support class properties in both documenters and the py domain directive, spanning multiple components."}
+{"instance_id": "sphinx-doc__sphinx-9591", "score": null, "insufficient_info": true, "confidence": 0.6, "reason": "Body is only an issue reference and the fix is not described."}
+{"instance_id": "sphinx-doc__sphinx-9602", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Avoid cross-references inside Literal annotations, requiring special handling in type parsing."}
+{"instance_id": "sphinx-doc__sphinx-9658", "score": 1, "insufficient_info": false, "confidence": 0.5, "reason": "Fix base class reporting for subclasses of mocked objects, likely localized."}
+{"instance_id": "sphinx-doc__sphinx-9673", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Also check for :returns: field alongside :return:."}
+{"instance_id": "sphinx-doc__sphinx-9698", "score": 0, "insufficient_info": false, "confidence": 0.65, "reason": "Remove parens from index entry for py:method, a small fix."}
+{"instance_id": "sphinx-doc__sphinx-9711", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Compare versions properly instead of as strings for double-digit versions."}
+{"instance_id": "sympy__sympy-11618", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Pad points of differing dimension in distance computation, small change."}
+{"instance_id": "sympy__sympy-12096", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Make evalf recurse into implemented function arguments, small localized change."}
+{"instance_id": "sympy__sympy-12419", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Return KroneckerDelta for symbolic indices in Identity entry, with a design alternative noted."}
+{"instance_id": "sympy__sympy-12481", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Allow non-disjoint cycles by composing them, requiring semantic choices in constructor."}
+{"instance_id": "sympy__sympy-12489", "score": 3, "insufficient_info": false, "confidence": 0.6, "reason": "Refactor Permutation to use classmethods for subclassing across many methods, with compatibility concerns."}
+{"instance_id": "sympy__sympy-13031", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Fix stacking for sparse matrices, likely small localized change."}
+{"instance_id": "sympy__sympy-13091", "score": 3, "insufficient_info": false, "confidence": 0.85, "reason": "Systematic change of rich comparison semantics to return NotImplemented across many classes."}
+{"instance_id": "sympy__sympy-13372", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Fix Mul argument ordering handling in evalf, small localized change."}
+{"instance_id": "sympy__sympy-13480", "score": 0, "insufficient_info": false, "confidence": 0.85, "reason": "Typo fix in hyperbolic.py plus tests."}
+{"instance_id": "sympy__sympy-13551", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Replace invalid transformation in Product with correct one, small localized change."}
+{"instance_id": "sympy__sympy-13615", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Handle mixed symbols and numbers in Complement, requiring splitting logic and edge cases."}
+{"instance_id": "sympy__sympy-13647", "score": null, "insufficient_info": true, "confidence": 0.5, "reason": "Title and body give no detail on the col_insert fix."}
+{"instance_id": "sympy__sympy-13757", "score": 0, "insufficient_info": false, "confidence": 0.85, "reason": "Add _op_priority attribute to Poly."}
+{"instance_id": "sympy__sympy-13798", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Allow arbitrary user mul_symbol in latex printer, small change."}
+{"instance_id": "sympy__sympy-13852", "score": 2, "insufficient_info": false, "confidence": 0.7, "reason": "Add several special-value evaluations and change expansion for polylog, with deliberate scope choices."}
+{"instance_id": "sympy__sympy-13877", "score": 2, "insufficient_info": false, "confidence": 0.75, "reason": "Chose random numeric zero test after weighing performance tradeoffs against alternatives."}
+{"instance_id": "sympy__sympy-13878", "score": 2, "insufficient_info": false, "confidence": 0.65, "reason": "Add precomputed _cdf methods to a dozen distributions, repetitive but needing correct formulas."}
+{"instance_id": "sympy__sympy-13974", "score": 2, "insufficient_info": false, "confidence": 0.7, "reason": "New Pow simplification function integrated with Mul handling, consistent across a few places."}
+{"instance_id": "sympy__sympy-14248", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Change MatrixSymbol/MatMul/MatAdd printing across printers with output choices."}
+{"instance_id": "sympy__sympy-14531", "score": 1, "insufficient_info": false, "confidence": 0.75, "reason": "Route subexpression printing through self._print in several StrPrinter methods, repetitive but simple."}
+{"instance_id": "sympy__sympy-14711", "score": null, "insufficient_info": true, "confidence": 0.5, "reason": "Body only says Fixes #14710; title hints at adding zero to vector but little detail."}
+{"instance_id": "sympy__sympy-14976", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Add rational printing in mpmath printer, small localized change."}
+{"instance_id": "sympy__sympy-15017", "score": 0, "insufficient_info": false, "confidence": 0.85, "reason": "Change len of rank-0 arrays from 0 to 1."}
+{"instance_id": "sympy__sympy-15345", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Add Max/Min dispatch and _print_Expr alias in Mathematica printer."}
+{"instance_id": "sympy__sympy-15349", "score": 0, "insufficient_info": false, "confidence": 0.85, "reason": "Sign correction in rotation matrix definition."}

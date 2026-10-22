@@ -1,0 +1,50 @@
+{"instance_id": "django__django-17087", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Small change in FunctionTypeSerializer.serialize with a regression test."}
+{"instance_id": "django__django-7530", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Corrects the arguments passed to allow_migrate by using the right model lookup per app."}
+{"instance_id": "django__django-9296", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Adds a small __iter__ method to Paginator with clear behavior."}
+{"instance_id": "matplotlib__matplotlib-13989", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Update rather than replace hist_kwargs when density is passed, a small localized fix."}
+{"instance_id": "matplotlib__matplotlib-14623", "score": 2, "insufficient_info": false, "confidence": 0.4, "reason": "Fixes axis inversion for two locator types (log and logit), likely touching a few places consistently."}
+{"instance_id": "matplotlib__matplotlib-20488", "score": 0, "insufficient_info": false, "confidence": 0.95, "reason": "Changes a strict less-than to less-or-equal in the vmin check."}
+{"instance_id": "matplotlib__matplotlib-20676", "score": 1, "insufficient_info": false, "confidence": 0.5, "reason": "Fixes SpanSelector initial bounds, a localized change with tests."}
+{"instance_id": "matplotlib__matplotlib-20826", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Reverts part of an earlier change so that shared-axes clear keeps init-time tick info, requiring understanding of subplot/gridspec state."}
+{"instance_id": "matplotlib__matplotlib-20859", "score": 0, "insufficient_info": false, "confidence": 0.9, "reason": "Changes an isinstance check from Figure to FigureBase."}
+{"instance_id": "matplotlib__matplotlib-21568", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Adds braces around colons and replaces spaces with \\; in the tex wrapper, a small string change."}
+{"instance_id": "matplotlib__matplotlib-22719", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Described as a simple fix to remove an incorrect deprecation warning."}
+{"instance_id": "matplotlib__matplotlib-22865", "score": 1, "insufficient_info": false, "confidence": 0.5, "reason": "Localized colorbar fix for extend with drawedges plus a test."}
+{"instance_id": "matplotlib__matplotlib-22871", "score": 1, "insufficient_info": false, "confidence": 0.5, "reason": "Small fix to the formatter condition so the year offset is always added."}
+{"instance_id": "matplotlib__matplotlib-23299", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Chose to special-case the backend key in rc_context over a general exclusion list, with API and behavior implications."}
+{"instance_id": "matplotlib__matplotlib-23314", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Adds a visibility check so invisible 3D axes are not drawn."}
+{"instance_id": "matplotlib__matplotlib-23412", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Passes the dash offset through in Patch.draw."}
+{"instance_id": "matplotlib__matplotlib-23476", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Restores original DPI in __getstate__ with defensive handling when the attribute is missing."}
+{"instance_id": "matplotlib__matplotlib-24026", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Stops stackplot from modifying the property cycle and handles C0 colors, a localized change."}
+{"instance_id": "matplotlib__matplotlib-24149", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Handles all-NaN input in bar with a small edge-case fix."}
+{"instance_id": "matplotlib__matplotlib-24177", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Disables path simplification for autoscaling, a small localized change with a clear rationale."}
+{"instance_id": "matplotlib__matplotlib-24570", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Corrects the bottom/top alignment definitions in the packers."}
+{"instance_id": "matplotlib__matplotlib-24627", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Resetting axes and figure on all children during clear requires care across artist types to break cycles."}
+{"instance_id": "matplotlib__matplotlib-24637", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Applies an existing fix pattern to AnnotationBbox so the renderer receives it."}
+{"instance_id": "matplotlib__matplotlib-24870", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "New default levels for bool inputs in contour and contourf, a behavior choice affecting both."}
+{"instance_id": "matplotlib__matplotlib-24970", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Moves a cast outside the float block to cover unsigned ints."}
+{"instance_id": "matplotlib__matplotlib-25122", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Drops np.abs on the window, with a considered note about the complex-window behavior change."}
+{"instance_id": "matplotlib__matplotlib-25287", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Sets the offset text color from the tick labelcolor or color."}
+{"instance_id": "matplotlib__matplotlib-25311", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Making draggable legends picklable requires choices about state handling in the draggable helper."}
+{"instance_id": "matplotlib__matplotlib-25332", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Pickling support for aligned labels requires handling the grouper's weakrefs in getstate/setstate."}
+{"instance_id": "matplotlib__matplotlib-25479", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Changes semantics so the registered name takes precedence over cmap.name, which must stay consistent across lookup paths."}
+{"instance_id": "matplotlib__matplotlib-25775", "score": 3, "insufficient_info": false, "confidence": 0.8, "reason": "Adds an antialiased parameter to Text and Annotation and changes backends to read it from the GraphicsContext, spanning several layers."}
+{"instance_id": "matplotlib__matplotlib-25960", "score": 2, "insufficient_info": false, "confidence": 0.7, "reason": "Deliberately limits the change to the subfigures method and updates positions after instantiation while keeping other paths unchanged."}
+{"instance_id": "matplotlib__matplotlib-26113", "score": 0, "insufficient_info": false, "confidence": 0.95, "reason": "Changes > mincnt to >= mincnt for consistency."}
+{"instance_id": "matplotlib__matplotlib-26208", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Copies axis units when creating twins, with the author noting several interacting causes."}
+{"instance_id": "matplotlib__matplotlib-26291", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Threads the renderer from the axes through several calls that need it."}
+{"instance_id": "matplotlib__matplotlib-26342", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Adds a set_paths method to Collection, a small enhancement."}
+{"instance_id": "matplotlib__matplotlib-26466", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Unpacks the coordinates at construction to prevent later mutation and inlines a helper."}
+{"instance_id": "mwaskom__seaborn-3069", "score": 3, "insufficient_info": false, "confidence": 0.7, "reason": "Three coordinated axis behavior changes for nominal scales with explicit design tradeoffs on where the logic should live."}
+{"instance_id": "mwaskom__seaborn-3187", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Takes the shortest-path fix of disabling offset and scientific notation on the legend formatter."}
+{"instance_id": "pallets__flask-5014", "score": 0, "insufficient_info": false, "confidence": 0.9, "reason": "Adds a check raising ValueError for an empty blueprint name."}
+{"instance_id": "psf__requests-1142", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Stops setting a default Content-Length on GET requests, a small localized change."}
+{"instance_id": "psf__requests-1724", "score": 1, "insufficient_info": false, "confidence": 0.4, "reason": "Body hints at handling a unicode method value, a small fix, but details are thin."}
+{"instance_id": "psf__requests-1766", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Quote the qop value in the digest auth header."}
+{"instance_id": "psf__requests-1921", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Skip headers with None value for both session and request headers."}
+{"instance_id": "psf__requests-2317", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Swaps builtin_str for to_native_string."}
+{"instance_id": "psf__requests-2931", "score": 1, "insufficient_info": false, "confidence": 0.3, "reason": "Regression fix for binary bodies; the title suggests a small fix but no details are given."}
+{"instance_id": "psf__requests-5414", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Adds a host-start check raising InvalidURL, plus tests."}
+{"instance_id": "psf__requests-6028", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Manually re-adds the auth portion of proxy URLs after the parse_url switch."}
+{"instance_id": "pydata__xarray-2905", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Replaces blanket values attribute access with an explicit type check and extends tests."}
+{"instance_id": "pydata__xarray-3095", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Fixes dtype handling in IndexVariable.copy(deep=True), a localized regression fix."}

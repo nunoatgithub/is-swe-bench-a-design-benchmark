@@ -1,0 +1,50 @@
+{"instance_id": "pydata__xarray-3151", "score": null, "insufficient_info": true, "confidence": 0.6, "reason": "Title mentions a hotfix for non-monotonic identical coords but the body gives no detail of the change."}
+{"instance_id": "pydata__xarray-3305", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Add keep_attrs handling to quantile with a default choice, small localized change."}
+{"instance_id": "pydata__xarray-3677", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Bugfix to let Dataset.merge accept a DataArray, likely a small conversion in one place."}
+{"instance_id": "pydata__xarray-3993", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Renaming dim to coord in a public API implies compatibility/deprecation choices and docs."}
+{"instance_id": "pydata__xarray-4075", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Boolean weights handling fix is a small localized change (e.g. cast to int)."}
+{"instance_id": "pydata__xarray-4094", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Fix for single-dimension variables in to_unstacked_dataset, a localized edge case."}
+{"instance_id": "pydata__xarray-4356", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Supporting multiple dims with min_count requires reworking the null-count logic and edge cases."}
+{"instance_id": "pydata__xarray-4629", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Copy attrs in the merged object, effectively a one-line fix."}
+{"instance_id": "pydata__xarray-4687", "score": 2, "insufficient_info": false, "confidence": 0.65, "reason": "Adds keep_attrs option to where with a choice of attribute semantics and documentation."}
+{"instance_id": "pydata__xarray-4695", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Pass the indexer dict as a single argument to sel instead of unpacking, small localized change."}
+{"instance_id": "pydata__xarray-4966", "score": 1, "insufficient_info": false, "confidence": 0.65, "reason": "Add symmetric _Unsigned=false decoding case in conventions, a small localized addition."}
+{"instance_id": "pydata__xarray-6461", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Check that x has attrs before accessing them in the keep_attrs callable."}
+{"instance_id": "pydata__xarray-6599", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Restoring timedelta support in polyval needs handling of datetime/timedelta conversion, some design thought."}
+{"instance_id": "pydata__xarray-6721", "score": 1, "insufficient_info": false, "confidence": 0.65, "reason": "Make .chunks avoid loading lazy data, localized fix."}
+{"instance_id": "pydata__xarray-6744", "score": 1, "insufficient_info": false, "confidence": 0.65, "reason": "Fix __iter__ window handling with center=True in one place; test reorganization is extra."}
+{"instance_id": "pydata__xarray-6938", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Copy indexes rather than mutating inplace, small localized fix."}
+{"instance_id": "pydata__xarray-6992", "score": 3, "insufficient_info": false, "confidence": 0.75, "reason": "Review of set_index/reset_index restoring prior behavior across multiple issues with explicit tradeoff decisions."}
+{"instance_id": "pydata__xarray-7229", "score": 2, "insufficient_info": false, "confidence": 0.65, "reason": "Revert part of an earlier change while keeping scalar handling, requiring consistent attribute semantics."}
+{"instance_id": "pydata__xarray-7233", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Ensure Coarsen.construct keeps all coords, a localized fix."}
+{"instance_id": "pydata__xarray-7393", "score": 2, "insufficient_info": false, "confidence": 0.55, "reason": "Preserving dtype for MultiIndex levels requires changes in the index adapter layer with some design choice."}
+{"instance_id": "pylint-dev__pylint-4551", "score": 3, "insufficient_info": false, "confidence": 0.6, "reason": "New feature adding type annotations to pyreverse output touching extraction and rendering."}
+{"instance_id": "pylint-dev__pylint-4604", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Recurse into attribute lookups in type comments, a small localized change."}
+{"instance_id": "pylint-dev__pylint-4661", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Adopting XDG cache dir involves path choices, backward compatibility and docs."}
+{"instance_id": "pylint-dev__pylint-4970", "score": 1, "insufficient_info": false, "confidence": 0.75, "reason": "Early exit of the similarity checker when min-similarity-lines is 0."}
+{"instance_id": "pylint-dev__pylint-6386", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Fix short -v flag option definition, small localized change."}
+{"instance_id": "pylint-dev__pylint-6528", "score": 2, "insufficient_info": false, "confidence": 0.65, "reason": "Apply the several ignore options during recursive directory discovery, needs choices about which options and matching."}
+{"instance_id": "pylint-dev__pylint-6903", "score": 0, "insufficient_info": false, "confidence": 0.85, "reason": "Change a not-None check to a truthiness check."}
+{"instance_id": "pylint-dev__pylint-7080", "score": 1, "insufficient_info": false, "confidence": 0.75, "reason": "Normalize path with normpath before ignore check, small change."}
+{"instance_id": "pylint-dev__pylint-7277", "score": 1, "insufficient_info": false, "confidence": 0.75, "reason": "Add a check that the first sys.path item is cwd before removing it."}
+{"instance_id": "pylint-dev__pylint-8898", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Splitting comma-separated regexes while ignoring quantifier commas needs a custom parsing approach."}
+{"instance_id": "pytest-dev__pytest-10051", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Keep the same records list object on reset so the stash binding is preserved, small fix."}
+{"instance_id": "pytest-dev__pytest-10081", "score": 1, "insufficient_info": false, "confidence": 0.65, "reason": "Skip tearDown for skipped unittest cases under --pdb, a small localized condition."}
+{"instance_id": "pytest-dev__pytest-10356", "score": 3, "insufficient_info": false, "confidence": 0.65, "reason": "Collecting marks from the MRO changes pytestmark semantics, with compatibility concerns noted."}
+{"instance_id": "pytest-dev__pytest-5262", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Remove 'b' from the stdout mode, a trivial one-line change."}
+{"instance_id": "pytest-dev__pytest-5631", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Use identity checks for mock sentinels instead of equality, a mechanical fix."}
+{"instance_id": "pytest-dev__pytest-5787", "score": 3, "insufficient_info": false, "confidence": 0.7, "reason": "Serialization of chained exceptions needed refactoring into reusable functions across report code."}
+{"instance_id": "pytest-dev__pytest-5809", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Fix the lexer parameter sent to bpaste, a backport of a trivial fix."}
+{"instance_id": "pytest-dev__pytest-5840", "score": 2, "insufficient_info": false, "confidence": 0.65, "reason": "Revert a prior change for a simpler approach using resolved Path keys, requiring consistent conftest handling."}
+{"instance_id": "pytest-dev__pytest-6197", "score": 1, "insufficient_info": false, "confidence": 0.55, "reason": "Fix __init__.py collection condition, a small localized change."}
+{"instance_id": "pytest-dev__pytest-6202", "score": 0, "insufficient_info": false, "confidence": 0.55, "reason": "Fix incorrect getmodpath result, likely a small string handling fix."}
+{"instance_id": "pytest-dev__pytest-7205", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Special case bytes in saferepr usage to avoid BytesWarning, small localized change with a stated tradeoff."}
+{"instance_id": "pytest-dev__pytest-7236", "score": 1, "insufficient_info": false, "confidence": 0.65, "reason": "Avoid calling tearDown for skipped tests, a small localized change."}
+{"instance_id": "pytest-dev__pytest-7324", "score": 1, "insufficient_info": false, "confidence": 0.65, "reason": "Prevent illegal Python identifiers in the mark expression parser, a small localized change."}
+{"instance_id": "pytest-dev__pytest-7432", "score": 1, "insufficient_info": false, "confidence": 0.65, "reason": "Fix skip location reporting under --runxfail, a small condition change in one place."}
+{"instance_id": "pytest-dev__pytest-7490", "score": 1, "insufficient_info": false, "confidence": 0.75, "reason": "Always refresh the xfail mark when needed, small localized fix to a regression."}
+{"instance_id": "pytest-dev__pytest-7521", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Preserve newlines in capfd by disabling newline translation, small change."}
+{"instance_id": "pytest-dev__pytest-7571", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Restore handler level at teardown after set_level, small localized fix."}
+{"instance_id": "pytest-dev__pytest-7982", "score": 0, "insufficient_info": false, "confidence": 0.7, "reason": "Symlinked directories were not followed in collection, likely a one-flag fix."}
+{"instance_id": "pytest-dev__pytest-8399", "score": 0, "insufficient_info": false, "confidence": 0.85, "reason": "Add an underscore prefix to five fixture name templates."}
+{"instance_id": "scikit-learn__scikit-learn-10297", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Add a store_cv_values parameter to RidgeClassifierCV and pass it through, small API addition."}

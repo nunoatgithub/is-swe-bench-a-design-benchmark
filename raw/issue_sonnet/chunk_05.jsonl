@@ -1,0 +1,50 @@
+{"instance_id": "django__django-17087", "score": 1, "confidence": 0.8, "reason": "Serializer must use __qualname__ for classmethods of nested classes, a small localized change."}
+{"instance_id": "django__django-7530", "score": 1, "confidence": 0.85, "reason": "Loop over models should be restricted to each app's own models in makemigrations consistency check."}
+{"instance_id": "django__django-9296", "score": 0, "confidence": 0.95, "reason": "Add a __iter__ method whose body is given in the issue."}
+{"instance_id": "matplotlib__matplotlib-13989", "score": 1, "confidence": 0.8, "reason": "Pass range through to bin computation when density=True in hist, small localized fix."}
+{"instance_id": "matplotlib__matplotlib-14623", "score": 2, "confidence": 0.6, "reason": "Log-scale limit setting must preserve inversion, requiring care in log locator/limit handling and compatibility."}
+{"instance_id": "matplotlib__matplotlib-20488", "score": 1, "confidence": 0.55, "reason": "Fix LogNorm handling of huge ranges so transformed vmin/vmax stay finite; needs some thought but is localized."}
+{"instance_id": "matplotlib__matplotlib-20676", "score": 2, "confidence": 0.6, "reason": "SpanSelector's interactive handles artists influence autoscaling; fix must exclude them from data limits without breaking behavior."}
+{"instance_id": "matplotlib__matplotlib-20826", "score": 2, "confidence": 0.6, "reason": "Axes.clear must re-apply shared-axis tick hiding and default tick settings, touching several interacting pieces."}
+{"instance_id": "matplotlib__matplotlib-20859", "score": 0, "confidence": 0.9, "reason": "Issue gives the fix: change the isinstance check in Legend to FigureBase."}
+{"instance_id": "matplotlib__matplotlib-21568", "score": 2, "confidence": 0.6, "reason": "Date formatting with usetex needs choices about tex-wrapping of tick labels while keeping non-tex output compatible."}
+{"instance_id": "matplotlib__matplotlib-22719", "score": 1, "confidence": 0.75, "reason": "Skip the numlike deprecation warning for empty input in category converter, small localized change."}
+{"instance_id": "matplotlib__matplotlib-22865", "score": 1, "confidence": 0.7, "reason": "Colorbar divider drawing should include extremity edges when extend is set; localized fix in the edge line construction."}
+{"instance_id": "matplotlib__matplotlib-22871", "score": 1, "confidence": 0.7, "reason": "ConciseDateFormatter offset logic needs adjusting so year shows when January is absent; localized edge case."}
+{"instance_id": "matplotlib__matplotlib-23299", "score": 1, "confidence": 0.7, "reason": "get_backend triggers backend switch that clears Gcf after rc_context; fix is small but needs understanding of rc restoration."}
+{"instance_id": "matplotlib__matplotlib-23314", "score": 1, "confidence": 0.85, "reason": "Axes3D.draw should return early when not visible, a small localized fix."}
+{"instance_id": "matplotlib__matplotlib-23412", "score": 1, "confidence": 0.75, "reason": "Patch draw must stop discarding the dash offset; small localized change."}
+{"instance_id": "matplotlib__matplotlib-23476", "score": 1, "confidence": 0.7, "reason": "Figure __setstate__ should preserve original dpi when backend multiplies it; small but needs care."}
+{"instance_id": "matplotlib__matplotlib-24026", "score": 2, "confidence": 0.6, "reason": "Stackplot must accept CN colors without altering the axes prop cycler, requiring a different color-cycling approach."}
+{"instance_id": "matplotlib__matplotlib-24149", "score": 1, "confidence": 0.85, "reason": "Catch StopIteration in _convert_dx for all-nan x, small localized fix."}
+{"instance_id": "matplotlib__matplotlib-24177", "score": 2, "confidence": 0.55, "reason": "Step histogram must update data limits for density-scaled values, requiring understanding of how step polygons set limits."}
+{"instance_id": "matplotlib__matplotlib-24570", "score": 0, "confidence": 0.9, "reason": "Swap top/bottom alignment mapping in HPacker."}
+{"instance_id": "matplotlib__matplotlib-24627", "score": 2, "confidence": 0.65, "reason": "cla/clf must unset axes and figure on all child artists, touching Axes and Figure clearing consistently."}
+{"instance_id": "matplotlib__matplotlib-24637", "score": 1, "confidence": 0.85, "reason": "Wrap AnnotationBbox draw with open_group/close_group for gid, small localized change."}
+{"instance_id": "matplotlib__matplotlib-24870", "score": 2, "confidence": 0.65, "reason": "Autodetect bool input in contour and default levels to [0.5], requiring choices on where and how to detect."}
+{"instance_id": "matplotlib__matplotlib-24970", "score": 1, "confidence": 0.85, "reason": "Convert the sentinel values to the array dtype in Colormap.__call__ to avoid overflow warnings."}
+{"instance_id": "matplotlib__matplotlib-25122", "score": 0, "confidence": 0.9, "reason": "Remove np.abs in the window correction in _spectral_helper."}
+{"instance_id": "matplotlib__matplotlib-25287", "score": 0, "confidence": 0.9, "reason": "Use labelcolor with inherit fallback for offset text color, patch given in the issue."}
+{"instance_id": "matplotlib__matplotlib-25311", "score": 2, "confidence": 0.6, "reason": "Make DraggableBase picklable by avoiding canvas references, needing care with state and callbacks."}
+{"instance_id": "matplotlib__matplotlib-25332", "score": 1, "confidence": 0.75, "reason": "Make the Grouper used by align_labels picklable via __getstate__/__setstate__, a localized change."}
+{"instance_id": "matplotlib__matplotlib-25479", "score": 2, "confidence": 0.6, "reason": "Colormap registration vs internal name mismatch requires choices about copying/renaming and backward compatibility."}
+{"instance_id": "matplotlib__matplotlib-25775", "score": 3, "confidence": 0.6, "reason": "New antialiased property on Text must be threaded through Text, Annotation, and multiple backend renderers/GraphicsContext."}
+{"instance_id": "matplotlib__matplotlib-25960", "score": 2, "confidence": 0.6, "reason": "Subfigure layout must honor wspace/hspace, requiring changes in gridspec bbox computation and subfigure positioning."}
+{"instance_id": "matplotlib__matplotlib-26113", "score": 1, "confidence": 0.75, "reason": "Change the mincnt comparison to >= for the C-given path, small change with a compatibility decision."}
+{"instance_id": "matplotlib__matplotlib-26208", "score": 2, "confidence": 0.55, "reason": "Stackplot on twinned axes resets shared dataLim; need to find why and fix update_datalim handling for shared axes."}
+{"instance_id": "matplotlib__matplotlib-26291", "score": 1, "confidence": 0.7, "reason": "Locator call with renderer None should obtain the renderer from the axes' figure, small localized fix."}
+{"instance_id": "matplotlib__matplotlib-26342", "score": 1, "confidence": 0.75, "reason": "Add a set_paths method to ContourSet, a small API addition."}
+{"instance_id": "matplotlib__matplotlib-26466", "score": 1, "confidence": 0.85, "reason": "Copy the xy array in Annotation init, small localized change."}
+{"instance_id": "mwaskom__seaborn-3069", "score": 3, "confidence": 0.75, "reason": "Nominal scales need categorical-style margins, grid hiding, and axis inversion with several implementation approaches and design questions."}
+{"instance_id": "mwaskom__seaborn-3187", "score": 2, "confidence": 0.65, "reason": "Legend labels/title must incorporate the ScalarFormatter offset, with choices about how to present it."}
+{"instance_id": "pallets__flask-5014", "score": 0, "confidence": 0.95, "reason": "Add a check raising ValueError for an empty blueprint name."}
+{"instance_id": "psf__requests-1142", "score": 1, "confidence": 0.7, "reason": "Avoid setting Content-Length for GET requests with no body, small localized change in prepare_content_length."}
+{"instance_id": "psf__requests-1724", "score": 1, "confidence": 0.8, "reason": "Convert unicode method to native str in request preparation, one-line localized fix."}
+{"instance_id": "psf__requests-1766", "score": 0, "confidence": 0.85, "reason": "Wrap the qop value in double quotes in the Digest header."}
+{"instance_id": "psf__requests-1921", "score": 1, "confidence": 0.8, "reason": "Drop None-valued headers when merging session and request headers, small localized change."}
+{"instance_id": "psf__requests-2317", "score": 1, "confidence": 0.85, "reason": "Decode bytes method to str instead of builtin_str, a small change."}
+{"instance_id": "psf__requests-2931", "score": 1, "confidence": 0.8, "reason": "Skip to_native_string for bytes data in body preparation, small localized fix."}
+{"instance_id": "psf__requests-5414", "score": 0, "confidence": 0.85, "reason": "Catch UnicodeError in URL host encoding and raise InvalidURL."}
+{"instance_id": "psf__requests-6028", "score": 2, "confidence": 0.4, "reason": "Proxy auth 407 on Python 3.8.12 has unclear cause (urllib parsing change), so the fix requires investigation of proxy credential handling."}
+{"instance_id": "pydata__xarray-2905", "score": 1, "confidence": 0.8, "reason": "Restrict .values coercion in Variable.__setitem__ to xarray/pandas objects, small localized change."}
+{"instance_id": "pydata__xarray-3095", "score": 1, "confidence": 0.75, "reason": "Preserve unicode dtype when deep-copying IndexVariable, small localized fix."}

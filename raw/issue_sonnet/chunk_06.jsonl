@@ -1,0 +1,50 @@
+{"instance_id": "pydata__xarray-3151", "score": 1, "confidence": 0.7, "reason": "Monotonicity check should skip dimensions whose coords are identical across datasets; small localized logic change in combine_by_coords."}
+{"instance_id": "pydata__xarray-3305", "score": 0, "confidence": 0.85, "reason": "quantile drops attrs; pass keep_attrs through to the result construction."}
+{"instance_id": "pydata__xarray-3677", "score": 1, "confidence": 0.8, "reason": "Convert DataArray to Dataset in dataset_merge_method before merging."}
+{"instance_id": "pydata__xarray-3993", "score": 2, "confidence": 0.7, "reason": "Rename dim to coord in DataArray.integrate while keeping backward compatibility via a deprecation path."}
+{"instance_id": "pydata__xarray-4075", "score": 0, "confidence": 0.9, "reason": "Cast boolean weights to int/float before computing sum_of_weights."}
+{"instance_id": "pydata__xarray-4094", "score": 1, "confidence": 0.65, "reason": "to_unstacked_dataset must drop the conflicting stacked coordinate for single-dim variables; localized fix but needs understanding."}
+{"instance_id": "pydata__xarray-4356", "score": 1, "confidence": 0.8, "reason": "Replace mask.shape[axis] with product of shape over multiple axes in the nanops null-count logic, handling int axis too."}
+{"instance_id": "pydata__xarray-4629", "score": 0, "confidence": 0.95, "reason": "Issue states the fix: return dict(variable_attrs[0]) for override."}
+{"instance_id": "pydata__xarray-4687", "score": 1, "confidence": 0.6, "reason": "Make xr.where preserve attrs, likely via a keep_attrs parameter passed to apply_ufunc; small but with a default-behavior choice."}
+{"instance_id": "pydata__xarray-4695", "score": 1, "confidence": 0.7, "reason": "Avoid passing a dimension named 'method' as a keyword to sel by using a dict/positional indexers; small localized change."}
+{"instance_id": "pydata__xarray-4966", "score": 1, "confidence": 0.8, "reason": "Add symmetric handling for _Unsigned=False converting unsigned bytes to signed in the coding variable decoder."}
+{"instance_id": "pydata__xarray-6461", "score": 1, "confidence": 0.8, "reason": "keep_attrs lambda indexes attrs[1] when x is a scalar; need a guard for scalar args."}
+{"instance_id": "pydata__xarray-6599", "score": 2, "confidence": 0.6, "reason": "polyval with timedelta coords needs correct conversion to numeric and preservation of dim ordering, touching datetime handling logic."}
+{"instance_id": "pydata__xarray-6721", "score": 1, "confidence": 0.75, "reason": "get_chunksizes should use v.chunks / encoding on the variable rather than v.data to avoid loading; small localized change."}
+{"instance_id": "pydata__xarray-6744", "score": 1, "confidence": 0.75, "reason": "Rolling __iter__ must honor center by adjusting window start/stop; small logic change with some index thought."}
+{"instance_id": "pydata__xarray-6938", "score": 1, "confidence": 0.65, "reason": "swap_dims should copy variable before modifying dims so the original is not mutated; small localized fix."}
+{"instance_id": "pydata__xarray-6992", "score": 2, "confidence": 0.6, "reason": "Post index refactor, DataVariables length/iteration must handle more coord names than variables, with consistency across Dataset code."}
+{"instance_id": "pydata__xarray-7229", "score": 2, "confidence": 0.55, "reason": "Coordinate attrs overwritten by keep_attrs lambda; requires understanding apply_ufunc attr merging and correct handling for coords vs variable."}
+{"instance_id": "pydata__xarray-7233", "score": 1, "confidence": 0.8, "reason": "Coarsen.construct must keep original coordinate names as coords after reshaping; small change setting coords."}
+{"instance_id": "pydata__xarray-7393", "score": 2, "confidence": 0.55, "reason": "Stack's MultiIndex creation casts to int64; need to preserve dtype in PandasMultiIndex level handling without breaking behavior."}
+{"instance_id": "pylint-dev__pylint-4551", "score": 3, "confidence": 0.7, "reason": "Pyreverse must read type annotations and render them in UML, requiring new inference logic for annotations, defaults and display."}
+{"instance_id": "pylint-dev__pylint-4604", "score": 2, "confidence": 0.65, "reason": "Need to parse type comments and mark imported modules as used, handling attribute access in type comments."}
+{"instance_id": "pylint-dev__pylint-4661", "score": 2, "confidence": 0.65, "reason": "Move persistent data dir to XDG location with env var handling and backward compatibility, plus docs/tests."}
+{"instance_id": "pylint-dev__pylint-4970", "score": 1, "confidence": 0.8, "reason": "Short-circuit similarity checker when min-similarity-lines is 0; localized check."}
+{"instance_id": "pylint-dev__pylint-6386", "score": 1, "confidence": 0.8, "reason": "Make -v a flag action without argument and fix help metavar; small config change."}
+{"instance_id": "pylint-dev__pylint-6528", "score": 2, "confidence": 0.65, "reason": "Recursive file discovery must apply ignore, ignore-patterns and ignore-paths consistently, touching expand_modules and discovery."}
+{"instance_id": "pylint-dev__pylint-6903", "score": 0, "confidence": 0.9, "reason": "Ensure computed CPU count is at least 1, e.g. max(1, ...)."}
+{"instance_id": "pylint-dev__pylint-7080", "score": 2, "confidence": 0.6, "reason": "Recursive discovery must apply ignore-paths to discovered files with correct path form matching; need care with path normalization."}
+{"instance_id": "pylint-dev__pylint-7277", "score": 0, "confidence": 0.85, "reason": "Check that first sys.path entry is '', '.' or cwd before removing it."}
+{"instance_id": "pylint-dev__pylint-8898", "score": 3, "confidence": 0.6, "reason": "Regex CSV option splits on commas; needs a new parsing approach (escaping or smarter splitting) with compatibility tradeoffs."}
+{"instance_id": "pytest-dev__pytest-10051", "score": 1, "confidence": 0.85, "reason": "caplog.clear should clear the records list in place (or reset both) so get_records stays in sync."}
+{"instance_id": "pytest-dev__pytest-10081", "score": 1, "confidence": 0.8, "reason": "Check class-level skip as well as function skip before postponing tearDown under --pdb."}
+{"instance_id": "pytest-dev__pytest-10356", "score": 3, "confidence": 0.65, "reason": "Marker collection must consider MRO across classes with merging/dedup semantics, affecting store_mark and get_unpacked_marks."}
+{"instance_id": "pytest-dev__pytest-5262", "score": 1, "confidence": 0.8, "reason": "EncodedFile should expose mode without 'b'; small override of the mode property."}
+{"instance_id": "pytest-dev__pytest-5631", "score": 1, "confidence": 0.85, "reason": "Avoid ambiguous array truth value in num_mock_patch_args by identity comparison with sentinels."}
+{"instance_id": "pytest-dev__pytest-5787", "score": 3, "confidence": 0.7, "reason": "Report serialization for xdist must include chained exceptions, requiring changes to serialize/deserialize of reprs across layers."}
+{"instance_id": "pytest-dev__pytest-5809", "score": 0, "confidence": 0.95, "reason": "Change lexer from python3 to text in pastebin."}
+{"instance_id": "pytest-dev__pytest-5840", "score": 2, "confidence": 0.5, "reason": "Windows path casing regression in conftest import; need to preserve true case when resolving paths, platform-specific."}
+{"instance_id": "pytest-dev__pytest-6197", "score": 1, "confidence": 0.65, "reason": "Restore not collecting __init__.py files as modules unless they match python_files; localized collection condition."}
+{"instance_id": "pytest-dev__pytest-6202", "score": 0, "confidence": 0.9, "reason": "Remove the replace('.[', '[') in getmodpath, as the issue states."}
+{"instance_id": "pytest-dev__pytest-7205", "score": 0, "confidence": 0.9, "reason": "Use saferepr for cached_param in setuponly output."}
+{"instance_id": "pytest-dev__pytest-7236", "score": 1, "confidence": 0.7, "reason": "Avoid postponing tearDown when the test was skipped, fix condition in unittest pdb handling."}
+{"instance_id": "pytest-dev__pytest-7324", "score": 1, "confidence": 0.7, "reason": "Expression.compile must avoid compiling True/False/None as plain names; map identifiers to safe names in the AST."}
+{"instance_id": "pytest-dev__pytest-7432", "score": 1, "confidence": 0.85, "reason": "Fix the --runxfail branch in pytest_runtest_makereport so skip location handling still runs."}
+{"instance_id": "pytest-dev__pytest-7490", "score": 1, "confidence": 0.7, "reason": "Re-evaluate xfail marks after call so dynamically added markers are honored; small change in skipping hook."}
+{"instance_id": "pytest-dev__pytest-7521", "score": 1, "confidence": 0.9, "reason": "Open capture tmpfile with newline='' to avoid converting \\r to \\n."}
+{"instance_id": "pytest-dev__pytest-7571", "score": 1, "confidence": 0.85, "reason": "Save the handler level in set_level and restore it in fixture teardown; small addition."}
+{"instance_id": "pytest-dev__pytest-7982", "score": 0, "confidence": 0.95, "reason": "Remove follow_symlinks=False as the issue states."}
+{"instance_id": "pytest-dev__pytest-8399", "score": 0, "confidence": 0.9, "reason": "Prefix the generated unittest fixture name with an underscore."}
+{"instance_id": "scikit-learn__scikit-learn-10297", "score": 1, "confidence": 0.85, "reason": "Add store_cv_values parameter to RidgeClassifierCV __init__ and pass it to the base class, with docs."}

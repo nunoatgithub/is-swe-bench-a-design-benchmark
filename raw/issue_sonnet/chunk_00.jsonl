@@ -1,0 +1,50 @@
+{"instance_id": "astropy__astropy-12907", "score": 1, "confidence": 0.7, "reason": "Nested compound model handling in separability's _cstack needs a small fix to place the right operand's matrix correctly."}
+{"instance_id": "astropy__astropy-13033", "score": 1, "confidence": 0.6, "reason": "Improve the validation error message to report missing required columns, requiring some logic in one place."}
+{"instance_id": "astropy__astropy-13236", "score": 1, "confidence": 0.6, "reason": "Add a FutureWarning and later remove the structured-array-to-NdarrayMixin clause; small localized change with some compatibility care."}
+{"instance_id": "astropy__astropy-13398", "score": 3, "confidence": 0.8, "reason": "New ITRS<->AltAz/HADec transforms in the frame graph with time-invariance semantics and refraction considerations are a design-level addition."}
+{"instance_id": "astropy__astropy-13453", "score": 1, "confidence": 0.7, "reason": "HTML writer needs to apply the supplied formats to column values, a small localized change."}
+{"instance_id": "astropy__astropy-13579", "score": 2, "confidence": 0.6, "reason": "SlicedLowLevelWCS.world_to_pixel must use the correct dummy world value for dropped axes, needing thought about coupled axes."}
+{"instance_id": "astropy__astropy-13977", "score": 1, "confidence": 0.6, "reason": "Return NotImplemented instead of raising when inputs can't be converted in Quantity.__array_ufunc__, a localized change with some care on which exceptions."}
+{"instance_id": "astropy__astropy-14096", "score": 2, "confidence": 0.6, "reason": "SkyCoord.__getattr__ must propagate the real missing attribute's error, requiring a careful approach to attribute lookup."}
+{"instance_id": "astropy__astropy-14182", "score": 2, "confidence": 0.7, "reason": "RST writer must accept header_rows and adjust header/separator line handling consistently."}
+{"instance_id": "astropy__astropy-14309", "score": 0, "confidence": 0.9, "reason": "is_fits indexes args[0] without checking that args is non-empty; add a length guard."}
+{"instance_id": "astropy__astropy-14365", "score": 1, "confidence": 0.8, "reason": "Make QDP command regex case-insensitive and handle lowercase commands when parsing."}
+{"instance_id": "astropy__astropy-14369", "score": 2, "confidence": 0.6, "reason": "CDS unit parser grammar for composite division needs fixing so operator associativity is correct."}
+{"instance_id": "astropy__astropy-14508", "score": 1, "confidence": 0.8, "reason": "Try str(value) first in _format_float and fall back to existing formatting when too long."}
+{"instance_id": "astropy__astropy-14539", "score": 1, "confidence": 0.7, "reason": "FITSDiff VLA column comparison needs handling of Q-format variable-length arrays in the diff code."}
+{"instance_id": "astropy__astropy-14598", "score": 2, "confidence": 0.6, "reason": "Card value quote escaping and parsing across continuation boundaries must be made consistent in several places."}
+{"instance_id": "astropy__astropy-14995", "score": 1, "confidence": 0.8, "reason": "Handle the case where one operand's mask is None in mask-propagation arithmetic by copying the existing mask."}
+{"instance_id": "astropy__astropy-7166", "score": 1, "confidence": 0.85, "reason": "Also handle properties in InheritDocstrings, requiring a small addition to the function check."}
+{"instance_id": "astropy__astropy-7336", "score": 0, "confidence": 0.9, "reason": "Skip the return unit conversion when the return annotation is None or the returned value is None."}
+{"instance_id": "astropy__astropy-7606", "score": 1, "confidence": 0.85, "reason": "UnrecognizedUnit.__eq__ must handle None and uncoercible values by returning False."}
+{"instance_id": "astropy__astropy-7671", "score": 1, "confidence": 0.7, "reason": "Replace LooseVersion comparison in minversion with a robust version parse, with some care for dev suffixes."}
+{"instance_id": "astropy__astropy-8707", "score": 2, "confidence": 0.7, "reason": "Header.fromstring and Card.fromstring need to accept bytes and str consistently, with decoding choices."}
+{"instance_id": "astropy__astropy-8872", "score": 1, "confidence": 0.8, "reason": "Stop upcasting float16 in Quantity construction by adjusting the dtype conversion condition."}
+{"instance_id": "django__django-10097", "score": 1, "confidence": 0.75, "reason": "Adjust URLValidator regex for user:pass to disallow unencoded ':', '@', '/'."}
+{"instance_id": "django__django-10554", "score": 2, "confidence": 0.6, "reason": "Union queryset ordering mutation of combined queries needs cloning and careful ordering handling in the compiler."}
+{"instance_id": "django__django-10880", "score": 0, "confidence": 0.95, "reason": "Missing space between DISTINCT and CASE in the aggregate template."}
+{"instance_id": "django__django-10914", "score": 0, "confidence": 0.8, "reason": "Change default FILE_UPLOAD_PERMISSIONS setting to 0o644."}
+{"instance_id": "django__django-10973", "score": 1, "confidence": 0.85, "reason": "Rewrite postgres dbshell client to use subprocess.run with PGPASSWORD in env."}
+{"instance_id": "django__django-10999", "score": 0, "confidence": 0.95, "reason": "Add '-?' to the lookahead in the duration regex."}
+{"instance_id": "django__django-11066", "score": 0, "confidence": 0.95, "reason": "Pass using=db to content_type.save()."}
+{"instance_id": "django__django-11087", "score": 2, "confidence": 0.6, "reason": "Deletion collector should fetch only required fields, affecting related-object fetching and signal/fast-delete logic."}
+{"instance_id": "django__django-11095", "score": 1, "confidence": 0.8, "reason": "Add a get_inlines hook and use it in get_inline_instances."}
+{"instance_id": "django__django-11099", "score": 0, "confidence": 0.95, "reason": "Change validator regex anchors to \\A and \\Z."}
+{"instance_id": "django__django-11119", "score": 0, "confidence": 0.9, "reason": "Pass autoescape=self.autoescape when creating Context in render_to_string."}
+{"instance_id": "django__django-11133", "score": 1, "confidence": 0.85, "reason": "HttpResponse content setter should treat memoryview like bytes."}
+{"instance_id": "django__django-11138", "score": 3, "confidence": 0.65, "reason": "Per-database TIME_ZONE must be honored across MySQL, SQLite and Oracle backend operations, including skipping conversion when zones match."}
+{"instance_id": "django__django-11141", "score": 1, "confidence": 0.8, "reason": "Remove the __file__ check in the migration loader and ensure namespace packages work."}
+{"instance_id": "django__django-11149", "score": 2, "confidence": 0.6, "reason": "Inline permission checks for auto-created M2M through models must respect view-only permission, requiring choices in has_*_permission logic."}
+{"instance_id": "django__django-11163", "score": 0, "confidence": 0.95, "reason": "Change condition to 'fields is not None'."}
+{"instance_id": "django__django-11179", "score": 0, "confidence": 0.85, "reason": "Set instance pk to None in the fast-delete path."}
+{"instance_id": "django__django-11206", "score": 1, "confidence": 0.75, "reason": "In numberformat, return zeros when the number is smaller than the decimal_pos can represent instead of exponential notation."}
+{"instance_id": "django__django-11211", "score": 2, "confidence": 0.6, "reason": "GenericForeignKey prefetch must convert object ids to the target pk type for matching, requiring care in the prefetch code."}
+{"instance_id": "django__django-11239", "score": 1, "confidence": 0.85, "reason": "Pass sslcert, sslkey and sslrootcert options as env vars in postgres dbshell client."}
+{"instance_id": "django__django-11265", "score": 2, "confidence": 0.6, "reason": "split_exclude needs to carry over annotations/filtered relations into the subquery."}
+{"instance_id": "django__django-11276", "score": 1, "confidence": 0.8, "reason": "Replace django.utils.html.escape with html.escape, handling the quote output difference."}
+{"instance_id": "django__django-11292", "score": 1, "confidence": 0.8, "reason": "Expose skip_checks as a command-line option in the base command parser."}
+{"instance_id": "django__django-11299", "score": 2, "confidence": 0.6, "reason": "CheckConstraint SQL generation must consistently use simple column references across nested AND/OR Q objects."}
+{"instance_id": "django__django-11333", "score": 1, "confidence": 0.85, "reason": "Resolve settings.ROOT_URLCONF before the memoized get_resolver call."}
+{"instance_id": "django__django-11400", "score": 2, "confidence": 0.7, "reason": "Fall back to related model Meta.ordering and pass ordering in both related filters, covering a couple of places."}
+{"instance_id": "django__django-11433", "score": 2, "confidence": 0.6, "reason": "construct_instance must allow cleaned_data to override defaults for omitted fields while keeping existing behavior compatible."}
+{"instance_id": "django__django-11451", "score": 0, "confidence": 0.9, "reason": "Return early from authenticate when username or password is None."}

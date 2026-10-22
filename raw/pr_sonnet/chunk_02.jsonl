@@ -1,0 +1,50 @@
+{"instance_id": "django__django-13128", "score": null, "insufficient_info": true, "confidence": 0.8, "reason": "Body is only a ticket link and title is too vague about the change size."}
+{"instance_id": "django__django-13158", "score": null, "insufficient_info": true, "confidence": 0.8, "reason": "Body is just a ticket id; title does not reveal the approach."}
+{"instance_id": "django__django-13195", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Pass samesite/secure through delete_cookie, a small localized change."}
+{"instance_id": "django__django-13212", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Touches many validators consistently to include the value in errors."}
+{"instance_id": "django__django-13279", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Transition-compatible session encoding needs care about legacy format compatibility."}
+{"instance_id": "django__django-13297", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Wrapping the deprecation warning kwargs in lazy() is small and localized."}
+{"instance_id": "django__django-13315", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Deduplicating limit_choices_to joins on multi-value relations requires choosing a query approach."}
+{"instance_id": "django__django-13343", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Fix deconstruct to keep the callable storage, small localized change."}
+{"instance_id": "django__django-13344", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Call super().__init__() in several middlewares plus extended tests; clear small fix."}
+{"instance_id": "django__django-13346", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Needs a new __in lookup for key transforms handling value wrapping across backends."}
+{"instance_id": "django__django-13363", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Adding a tzinfo parameter to two functions following an existing pattern."}
+{"instance_id": "django__django-13401", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Changing field equality semantics requires consistent __eq__, __hash__ and ordering updates."}
+{"instance_id": "django__django-13406", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Solution proposed in ticket; small fix for pickled Query values handling plus docs and test."}
+{"instance_id": "django__django-13410", "score": 0, "insufficient_info": false, "confidence": 0.7, "reason": "Fixing the return value of lock/unlock on POSIX is a small mechanical fix."}
+{"instance_id": "django__django-13417", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Adjusting the ordered property for GROUP BY queries is a small localized condition."}
+{"instance_id": "django__django-13449", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Known fix for decimal window functions on SQLite, localized change."}
+{"instance_id": "django__django-13512", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Use ensure_ascii=False in JSON dumping in a couple of places."}
+{"instance_id": "django__django-13513", "score": 1, "insufficient_info": false, "confidence": 0.5, "reason": "Fix to traceback frame display in debug page, localized but needs thought."}
+{"instance_id": "django__django-13516", "score": 0, "insufficient_info": false, "confidence": 0.85, "reason": "Forward flush() to the underlying stream, one-line fix."}
+{"instance_id": "django__django-13551", "score": 2, "insufficient_info": false, "confidence": 0.7, "reason": "Include email in token hash with handling for custom user models and nullable email."}
+{"instance_id": "django__django-13568", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "System check must consider UniqueConstraint in Meta.constraints as well as unique field."}
+{"instance_id": "django__django-13569", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Exclude Random from GROUP BY via a small override."}
+{"instance_id": "django__django-13590", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Reconstruct namedtuple properly when resolving lookup values, small localized fix."}
+{"instance_id": "django__django-13658", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Pass the already computed prog name to CommandParser, small change."}
+{"instance_id": "django__django-13670", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Zero-pad the year formatting for years under 1000, tiny fix."}
+{"instance_id": "django__django-13741", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Set disabled=True by default and remove obsolete methods, small change."}
+{"instance_id": "django__django-13786", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Fix optimizer to clear options when merging CreateModel with AlterModelOptions, localized."}
+{"instance_id": "django__django-13794", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Add __add__ handling for lazy proxies, small localized patch."}
+{"instance_id": "django__django-13807", "score": 0, "insufficient_info": false, "confidence": 0.9, "reason": "Quote table names in the SQLite constraint check query."}
+{"instance_id": "django__django-13809", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Add a --skip-checks option to runserver following existing pattern."}
+{"instance_id": "django__django-13810", "score": 2, "insufficient_info": false, "confidence": 0.5, "reason": "Async middleware chain handling must avoid mutating handler state when skipping middleware, subtle."}
+{"instance_id": "django__django-13820", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Add an extra __path__ list check in the migrations loader, small change with clear semantics."}
+{"instance_id": "django__django-13821", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Bumping minimum SQLite touches feature flags, checks, and docs consistently."}
+{"instance_id": "django__django-13837", "score": 2, "insufficient_info": false, "confidence": 0.7, "reason": "Replace detection logic using documented __main__.__spec__ approach and update tests."}
+{"instance_id": "django__django-13925", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Adjust the system check for inherited primary keys, localized."}
+{"instance_id": "django__django-13933", "score": 0, "insufficient_info": false, "confidence": 0.8, "reason": "Add value params to the invalid_choice ValidationError, small change."}
+{"instance_id": "django__django-13964", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Fix parent pk assignment on save with non-numeric pk requires care around empty-value semantics."}
+{"instance_id": "django__django-14007", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Apply converters to returning fields from INSERT across backends and compiler paths."}
+{"instance_id": "django__django-14011", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Close DB connections at the end of each server thread, small localized change."}
+{"instance_id": "django__django-14017", "score": 1, "insufficient_info": false, "confidence": 0.7, "reason": "Support reflected combining of Q with conditional expressions, small change."}
+{"instance_id": "django__django-14034", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Required attribute rendering for MultiValueField subwidgets depends on subfield and require_all_fields."}
+{"instance_id": "django__django-14053", "score": 2, "insufficient_info": false, "confidence": 0.6, "reason": "Rework of post-processing loop to dedupe yields while keeping behavior, based on prior discussion."}
+{"instance_id": "django__django-14089", "score": 0, "insufficient_info": false, "confidence": 0.85, "reason": "Add __reversed__ to OrderedSet, one-line addition."}
+{"instance_id": "django__django-14122", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Skip Meta.ordering in GROUP BY, localized compiler change."}
+{"instance_id": "django__django-14140", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Fix Q deconstruct for non-subscriptable children, small localized change."}
+{"instance_id": "django__django-14155", "score": 2, "insufficient_info": false, "confidence": 0.7, "reason": "Unwrap partial in ResolverMatch while keeping attributes and repr consistent."}
+{"instance_id": "django__django-14170", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Exclude iso_year from the year bounds optimization, small change."}
+{"instance_id": "django__django-14238", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Use subclass check via metaclass for AutoField, small localized change."}
+{"instance_id": "django__django-14311", "score": 1, "insufficient_info": false, "confidence": 0.6, "reason": "Handle python -m for non-package modules in autoreloader argument detection."}
+{"instance_id": "django__django-14315", "score": 1, "insufficient_info": false, "confidence": 0.8, "reason": "Return None instead of empty dict for env so os.environ is used, small fix."}
